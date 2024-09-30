@@ -21,7 +21,7 @@
          }
         header {
             background-color: black;
-            color: amethyst;
+            color: white;
             position: fixed;
             top: 0;
             width: 100%;
@@ -35,7 +35,15 @@
         }
         .header-left {
             font-size: 24px;
+            color: white;
             font-weight: bold;
+            text-decoration: none;
+        }
+        .header-left a {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
         }
         .header-center {
             display: flex;
@@ -84,12 +92,12 @@
             gap: 20px;
             margin: 0 auto;
         }
-        .about-section img {
+        /* .about-section img {
             border-radius: 50%;
-            width: 200px; /* Adjusted size */
-            height: 200px; /* Adjusted size */
+            width: 200px; 
+            height: 200px; 
             flex-shrink: 0;
-        }
+        } */
         .about-section div {
             max-width: 500px;
             flex: 1;
@@ -158,7 +166,8 @@
 </head>
 <body>
     <header>
-        <div class="header-left">Eetu Suikkanen</div>
+        <div class="header-left">
+            <a href="#logo">Eetu Suikkanen</a></div>
         <div class="header-center">
             <a href="#about">About</a>
             <a href="#music">Music</a>
@@ -182,8 +191,12 @@
     </header>
     <!-- ABOUT SECTION-->
     <div class="content">
+        <section id="logo" class="section"></section>
+            <img src="https://eetusuikkanen.wordpress.com/wp-content/uploads/2024/09/es-website-logo-400x400-1-2.png" alt="Logo" width="200" height="auto">
+        </section>
         <section id="about" class="section about-section">
-            <img src="https://eetusuikkanen.wordpress.com/wp-content/uploads/2024/09/profilepicwb2.jpg?w=929" alt="Profile Picture">
+            <img src="https://eetusuikkanen.wordpress.com/wp-content/uploads/2024/09/profilepicwb2.jpg?w=929" alt="Profile Picture" style="width: 200px; height: 200px;
+            flex-shrink: 0; border-radius: 50%;">
             <div>
                 <h1>About</h1>
                 <p>Eetu Suikkanen is a versatile composer from Finland, known for his ability to craft music across a wide range of styles. Eetu's work is characterized by its emotional depth and blending of both traditional and modern elements, making his compositions resonate with a diverse audience.</p>
