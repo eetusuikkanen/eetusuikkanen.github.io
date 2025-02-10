@@ -8,20 +8,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eetu Suikkanen</title>
     <style>
+        /* --- CSS Variables --- */
+        :root {
+            /* Default (Light Mode) Colors */
+            --background-color: #f5f5f5;
+            --text-color: #333;
+            --header-background-color: #f5f5f5;
+            --header-text-color: #333;
+            --header-hover-color: #666;
+            --about-section-background-color: rgba(200, 200, 200, 0.3);
+            --contact-section-background: rgba(200, 200, 200, 0.3);
+            --contact-button-background-color: #333;
+            --contact-button-text-color: white;
+            --contact-button-border-color: #333;
+            --contact-button-hover-background-color: #555;
+            --contact-button-hover-border-color: #111;
+            --footer-color: #333;
+            --icon-filter: invert(100%);
+            --theme-toggle-background: #555;
+            --theme-toggle-hover-background: #777;
+            --theme-toggle-icon: "☀️";
+            --hamburger-color: #333; /* Color of hamburger icon (light mode) */
+        }
+
+        .dark-mode {
+            /* Dark Mode Colors */
+            --background-color: black;
+            --text-color: white;
+            --header-background-color: black;
+            --header-text-color: white;
+            --header-hover-color: #ddd;
+            --about-section-background-color: rgba(160, 160, 160, 0.11);
+            --contact-section-background: rgba(160, 160, 160, 0.11);
+            --contact-button-background-color: white;
+            --contact-button-text-color: black;
+            --contact-button-border-color: white;
+            --contact-button-hover-background-color: grey;
+            --contact-button-hover-border-color: red;
+            --footer-color: white;
+            --icon-filter: none;
+            --theme-toggle-background: #555;
+            --theme-toggle-hover-background: #777;
+            --theme-toggle-icon: "🌙";
+            --hamburger-color: white; /* Color of hamburger icon (dark mode) */
+        }
+
+        /* --- Base Styles (Common to Both Themes) --- */
         body {
             margin: 0;
             font-family: Montserrat, sans-serif;
-            background-color: black; /* Changed to black background */
-            color: white; /* Changed to white text */
             text-align: center;
             scroll-behavior: smooth;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
         h1 {
-        color: white;
-         }
+          transition: color 0.3s;
+          color: var(--text-color);
+        }
         header {
-            background-color: black;
-            color: white;
             position: fixed;
             top: 0;
             width: 100%;
@@ -32,142 +78,253 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             z-index: 1000;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--header-background-color);
+            color: var(--header-text-color);
         }
         .header-left {
             font-size: 24px;
-            color: white;
             font-weight: bold;
             text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
         }
         .header-left a {
             font-size: 24px;
-            color: white;
             font-weight: bold;
             text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
         }
         .header-center {
             display: flex;
             gap: 20px;
         }
         .header-center a {
-            color: white;
             text-decoration: none;
             font-size: 18px;
+            transition: color 0.3s, background-color 0.3s; /* Add background transition */
+            color: var(--header-text-color);
+            padding: 8px 12px;       /* Add padding for clickability */
+            border-radius: 5px;      /* Optional: rounded corners */
         }
         .header-center a:hover {
-            color: #ddd;
+            color: var(--header-hover-color);
+            background-color: rgba(0, 0, 0, 0.1); /* Subtle background on hover */
         }
         .header-right {
             display: flex;
             align-items: center;
         }
         .header-right a {
-            color: white;
             margin-left: 15px;
             text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
         }
         .header-right a img {
             display: block;
+             transition: filter 0.3s; /* Add transition for smooth effect */
+            filter: var(--icon-filter); /* Apply the filter variable */
         }
         .header-right a:hover {
-            color: #ddd;
+           color: var(--header-hover-color);
         }
         .content {
             padding: 40px 0px;
-            background-color: black;
-            color: white;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
         .section {
             padding: 30px 0px;
         }
-        .about-section {
-            /* padding: 100px 0px; */
-            background-color: rgba(160, 160, 160, 0.11); /
-            color: white; 
-            padding: 40px; 
-            border-radius: 5px; 
+          .about-section {
+            padding: 20px;
+            border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
             margin: 0 auto;
-        }
-        /* .about-section img {
-            border-radius: 50%;
-            width: 200px; 
-            height: 200px; 
-            flex-shrink: 0;
-        } */
-        .about-section div {
-            max-width: 500px;
-            flex: 1;
-            text-align: left;
-        }
-        .contact-section {
-            /* max-width: 600px; */
-            margin: 0 auto;
-            color:black;
-            background-color: rgba(160, 160, 160, 0.11); /
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--about-section-background-color);
+            color: var(--text-color);
             text-align: center;
-            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+       .about-section div{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+       }
+
+        .contact-section {
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--contact-section-background);
+            color: var(--text-color);
         }
         .contact-button {
-            background-color: white; 
-            color: black;
             padding: 15px 30px;
-            border: 3;
-            border-color: white;
+            border: 3px solid;
             border-radius: 5px;
             font-size: 18px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+            background-color: var(--contact-button-background-color);
+            color: var(--contact-button-text-color);
+            border-color: var(--contact-button-border-color);
         }
-        .contact-button:hover {
-            background-color: grey;
-            border-color: red;
+
+         .contact-button:hover {
+            background-color: var(--contact-button-hover-background-color);
+            border-color: var(--contact-button-hover-border-color);
         }
+
         .footer {
             padding: 10px 0px;
-            color: white;
-       
+            transition: color 0.3s;
+            color: var(--footer-color);
+        }
+        .footer-lower a img{
+          transition: filter 0.3s;
+          filter: var(--icon-filter);
         }
         .footer-lower {
             padding: 20px 0px;
             display: block;
-            color: white;
             text-decoration: none;
-            outline:none
-       
+            outline:none;
+            transition: color 0.3s;
+            color: var(--footer-color);
         }
-        @media (max-width: 600px) {
-            .header-left {
-                font-size: 20px;
-            }
+
+
+        /* Mobile Menu Styles */
+        .hamburger {
+            display: none; /* Hide by default on larger screens */
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            /* Center the hamburger icon vertically */
+            line-height: 1; /* Reset line-height */
+
+        }
+
+        .hamburger-icon {
+            width: 25px;
+            height: 3px;
+            background-color: var(--hamburger-color); /* Use CSS variable */
+            display: block;
+            margin: 5px 0;
+            transition: background-color 0.3s; /* Smooth color change */
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) { /* Adjust breakpoint as needed */
             .header-center {
+                display: none; /* Hide text links on mobile */
                 flex-direction: column;
-                gap: 10px;
+                position: absolute;
+                top: 100%; /* Position below the header */
+                left: 0;
+                width: 100%;
+                background-color: var(--header-background-color); /* Match header */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                z-index: 999; /* Ensure it's below the header, above content */
             }
-            .header-right a {
-                margin-left: 10px;
+            .header-center.active{
+                display: flex;
             }
-            .content {
-                padding: 60px 10px;
-            }
-            .about-section {
-                flex-direction: column;
+
+            .header-center a {
+                display: block; /* Stack links vertically */
+                padding: 10px 20px;
                 text-align: center;
             }
-            .about-section img {
-                margin-bottom: 20px;
+
+            .hamburger {
+                display: block; /* Show hamburger icon on mobile */
             }
+              .about-section {
+                max-width: 90%; /* Adjust as needed for smaller screens */
+            }
+              .about-section div {
+                max-width: 90%; /* Adjust as needed for smaller screens */
+            }
+        }
+
+
+          /* Floating Button Styles */
+        #theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--theme-toggle-background);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+            transition: background-color 0.3s;
+        }
+
+        #theme-toggle::before {
+            content: var(--theme-toggle-icon);
+        }
+
+        #theme-toggle:hover{
+           background-color: var(--theme-toggle-hover-background);
+        }
+
+        /* Logo Container Styles */
+        #logo {
+            text-align: center; /* Center the content within the section */
+        }
+
+        .logo-container {
+            display: inline-block; /* Make the container inline-block */
+        }
+
+        /* Corrected Logo Display Logic */
+        .logo-light {
+          display: none;  /* Hide light logo by default */
+        }
+        .logo-dark{
+          display: block; /* Show dark logo by default */
+        }
+
+        /* Show correct logo in dark mode */
+        .dark-mode .logo-light{
+          display: block; /* Show light logo in dark mode */
+        }
+
+        .dark-mode .logo-dark{
+          display: none;  /* Hide dark logo in dark mode */
         }
     </style>
 </head>
 <body>
     <header>
         <div class="header-left">
-            <a href="#logo">Eetu Suikkanen</a></div>
+            <a href="#logo">Eetu Suikkanen</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+        </button>
         <div class="header-center">
             <a href="#about">About</a>
             <a href="#music">Music</a>
@@ -191,31 +348,30 @@
     </header>
     <!-- ABOUT SECTION-->
     <div class="content">
-        <section id="logo" class="section"></section>
-            <img src="https://eetusuikkanen.wordpress.com/wp-content/uploads/2024/09/es-website-logo-400x400-1-2.png" alt="Logo" width="200" height="auto">
-        </section>
-        <section id="about" class="section about-section">
-            <img src="https://eetusuikkanen.wordpress.com/wp-content/uploads/2024/09/profilepicwb2.jpg?w=929" alt="Profile Picture" style="width: 200px; height: 200px;
-            flex-shrink: 0; border-radius: 50%;">
-            <div>
-                <p>Eetu Suikkanen is a versatile composer from Finland, who crafts music across a wide range of styles. Eetu's work is characterized by its emotional depth and blending of both traditional and modern elements, making his compositions resonate with a diverse audience.</p>
-                <p>He continually explores new genres and techniques, pushing the boundaries of his craft. Wheter working on piano pieces, electronic music, or experimental sounds, Eetu's dedication to his art is evident in every note.</p>
+        <section id="logo" class="section">
+            <div class="logo-container">
+                <img src="images/es-website-logo-400x400-1-2.png" alt="Logo Light" width="200" height="auto" class="logo-light">
+                <img src="images/es-website-logo-400x400-1-2-dark.png" alt="Logo Dark" width="200" height="auto" class="logo-dark">
             </div>
         </section>
-        <section id="music" class="section">
-            <h1>Music</h1>
-            <!-- ReelCrafter Embed Test -->
-            <iframe
-              width="100%"
-              height="400"
-              scrolling="no"
-              frameborder="no"
-              src="https://play.reelcrafter.com/embed/8247146a-ee91-4069-a60d-2bbdec4a22d9">
-            </iframe>
+        <section id="about" class="section about-section">
+            <div>
+                <p>Eetu Suikkanen is a versatile composer from Finland, who writes music across a wide range of styles. He continually explores new genres and techniques, advancing his craft.</p>
+                <p>He also keeps a blog, where he posts about his projects/writing process</p>
+                <p>If you wish to reach him, you can send him an email.</p>
+            </div>
         </section>
+
         <section id="contact" class="section contact-section">
             <a href="mailto:eetu.suikkanen.music@gmail.com" class="contact-button">Contact</a>
         </section>
+
+        <section id="music" class="section">
+            <h1>Music</h1>
+            <div id="reelcrafter-container">
+              <!-- ReelCrafter Embeds will be loaded here by JavaScript -->
+            </div>
+          </section>
     </div>
         <!-- Footer -->
         <footer>
@@ -232,8 +388,90 @@
                 <a href="https://soundcloud.com/orgelon" target="_blank">
                     <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud">
                 </a>
-                
-            <div class="footer"><p>&copy; 2024 Eetu Suikkanen. All rights reserved.</p></div>
+
+            <div class="footer"><p>© 2024 Eetu Suikkanen. All rights reserved.</p></div>
             </div>
+          </footer>
+      <button id="theme-toggle"></button>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const reelcrafterContainer = document.getElementById('reelcrafter-container');
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.header-center');
+
+        // Function to load the correct ReelCrafter embed
+        function loadReelCrafterEmbed(isDarkMode) {
+            let embedCode = '';
+            if (isDarkMode) {
+                embedCode = `<iframe
+                  width="100%"
+                  height="400"
+                  scrolling="no"
+                  frameborder="no"
+                  src="https://play.reelcrafter.com/embed/8247146a-ee91-4069-a60d-2bbdec4a22d9">
+                </iframe>`;
+            } else {
+                embedCode = `<iframe
+                  width="100%"
+                  height="400"
+                  scrolling="no"
+                  frameborder="no"
+                  src="https://play.reelcrafter.com/embed/591052d0-7500-4839-9af8-504d2a7c762f">
+                </iframe>`;
+            }
+            reelcrafterContainer.innerHTML = embedCode; // Replace the content of the container
+        }
+
+        // Function to set the theme
+        function setTheme(isDarkMode) {
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+                 body.classList.remove('light-mode');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            }
+            localStorage.setItem('darkMode', isDarkMode);
+            loadReelCrafterEmbed(isDarkMode); // Reload the embed whenever the theme changes
+        }
+
+        // Check for saved preference on load, and for system preference
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+            setTheme(true);
+        } else if (savedDarkMode === 'false') {
+            setTheme(false);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // If no preference is saved, use system preference
+            setTheme(true);
+        }
+        //if no preference was made, load the light theme
+        else{
+          setTheme(false)
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const isDarkMode = body.classList.contains('dark-mode');
+            setTheme(!isDarkMode); // Toggle the theme
+        });
+
+         // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+             const isDarkMode = e.matches;
+            // Only set the theme IF no preference is stored
+            if (localStorage.getItem('darkMode') === null) {
+                setTheme(isDarkMode);
+            }
+
+         });
+
+        // Mobile menu toggle
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
