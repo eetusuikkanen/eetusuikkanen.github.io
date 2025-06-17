@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start of the Linux audio adventures – Blog – Eetu Suikkanen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #f5f5f5;
+            --text-color: #333;
+            --header-background-color: #f5f5f5;
+            --header-text-color: #333;
+            --header-hover-color: #666;
+            --about-section-background-color: rgba(200, 200, 200, 0.3);
+            --footer-color: #333;
+            --icon-filter: invert(100%);
+            --theme-toggle-background: #555;
+            --theme-toggle-hover-background: #777;
+            --theme-toggle-icon: "☀️";
+            --hamburger-color: #333;
+        }
+        .dark-mode {
+            --background-color: black;
+            --text-color: white;
+            --header-background-color: black;
+            --header-text-color: white;
+            --header-hover-color: #ddd;
+            --about-section-background-color: rgba(160, 160, 160, 0.11);
+            --footer-color: white;
+            --icon-filter: none;
+            --theme-toggle-background: #555;
+            --theme-toggle-hover-background: #777;
+            --theme-toggle-icon: "🌙";
+            --hamburger-color: white;
+        }
+        body {
+            margin: 0;
+            font-family: Montserrat, sans-serif;
+            text-align: center;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        h1, h2 {
+            transition: color 0.3s;
+            color: var(--text-color);
+        }
+        .container {
+            max-width: 700px;
+            margin: 80px auto 0 auto;
+            background: var(--about-section-background-color);
+            border-radius: 8px;
+            padding: 32px 24px;
+            text-align: left;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .date { color: #888; font-size: 0.95em; margin-bottom: 10px; }
+        .footer {
+            color: var(--footer-color);
+            padding: 24px 0 8px 0;
+            background: none;
+            font-size: 0.95em;
+            text-align: center;
+        }
+        #theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: var(--theme-toggle-background);
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: background 0.3s;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #theme-toggle:hover {
+            background: var(--theme-toggle-hover-background);
+        }
+        #theme-toggle::before {
+            content: var(--theme-toggle-icon);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../../blog.html">&larr; Back to Blog</a>
+        <h2>Initial Setup</h2>
+        <div class="date">6 May 2025</div>
+        <!-- Blog content goes here -->
+        <p>I’ve been playing around with making music on Linux every now and then with some jam projects, but after trying different distributions and learning about what I need to run some of my Windows software on Linux, I finally decided to take the plunge fully and try to swap fully over even if I had to give up some of the orchestral/acoustic sample libraries I couldn’t get running.</p>
+        <p>I’ve tried to get the EastWest download/manager software working before using WINE, but couldn’t get the ui working correctly to install the libraries and Play engine. So this time around I saved my sample libraries to a different drive and kept the installers for the VST plugins, and to my surprise Play installed without a problem and the ILOK drm software they utilize works without a problem, so I could just tell PLAY where to find the samples and everything worked without an issue. It’s really unbelievable that this can actually work, and really shows the hard work that the WINE team and the creator/maintainer of Yabridge has done for it to be possible!</p>
+        <p>Native Access i had gotten working before, but they’ve released a new version n3 that is not working with wine yet, but hopefully might work on a later WINE version.</p>
+        <p>But with Play working well I’m pretty much set for all the basic orchestral sounds but I still need to actually write a full piece using those to see how the performance is, since I don’t have any old projects to demo with since I used Cubase in windows for those and now use Reaper while in Linux since Cubase is not natively supported.</p>
+        <h2>Some resources/tools i used for setting things up:</h2>
+        <ul>
+            <li><a href="https://linuxmusicians.com/viewtopic.php?t=27121">Fedora low latency setup guide/documentation by Audiojunkie on the LinuxMusicians forums </a> - This is a helpful documentation on setting up Fedora for low latency work, best to read all the posts in the thread before doing any of the mentioned steps.</li>
+            <li><a href="https://github.com/robbert-vdh/yabridge">Yabridge</a> - This is the most important thing in the whole setup, it works together with Wine to be able to use most windows vst’s on linux. The github page has a guide on how to set it up depending on your distribution.</li>
+            <li><a href="https://github.com/GoranKovac/ReaScripts">SeXan’s pipewire config script for reaper</a> - This is a handy reaper script that opens a little GUI window in reaper to change the samplerate and buffer size for pipewire. You need to have the ReaPack repo manager extension installed and then import the repository with link from their github to ReaPack and then you can download the script called PipeWireConfig from there. After installing it you can make a button on the toolbar for it, add a keybind, or just call it from the actions menu when you need it.</li>
+            <li><a href="https://copr.fedorainfracloud.org/coprs/ycollet/audinux">Audinux COPR repo </a> - This is a user repository for Fedora maintained by Ycollette from the linuxmusicians forum with a lot of audio plugins/software in it so you can easily install them via your package manager.</li>
+        </ul>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <p>© 2024 Eetu Suikkanen. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="theme-toggle" aria-label="Toggle theme"></button>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        function setTheme(isDarkMode) {
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+                body.classList.remove('light-mode');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            }
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+            setTheme(true);
+        } else if (savedDarkMode === 'false') {
+            setTheme(false);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
+        themeToggle.addEventListener('click', () => {
+            const isDarkMode = body.classList.contains('dark-mode');
+            setTheme(!isDarkMode);
+        });
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (localStorage.getItem('darkMode') === null) {
+                setTheme(e.matches);
+            }
+        });
+    </script>
+</body>
+</html>
