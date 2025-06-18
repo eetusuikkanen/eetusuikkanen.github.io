@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start of the Linux audio adventures – Blog – Eetu Suikkanen</title>
+    <title>Alternative Soundtrack Jam #4 – Blog – Eetu Suikkanen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -96,22 +96,29 @@
 </head>
 <body>
     <div class="container">
-        <a href="../../blog.html">&larr; Back to Blog</a>
-        <h2>Initial Setup</h2>
-        <div class="date">6 May 2025</div>
-        <!-- Blog content goes here -->
-        <p>I’ve been playing around with making music on Linux every now and then with some jam projects, but after trying different distributions and learning about what I need to run some of my Windows software on Linux, I finally decided to take the plunge fully and try to swap fully over even if I had to give up some of the orchestral/acoustic sample libraries I couldn’t get running.</p>
-        <p>I’ve tried to get the EastWest download/manager software working before using WINE, but couldn’t get the ui working correctly to install the libraries and Play engine. So this time around I saved my sample libraries to a different drive and kept the installers for the VST plugins, and to my surprise Play installed without a problem and the ILOK drm software they utilize works without a problem, so I could just tell PLAY where to find the samples and everything worked without an issue. It’s really unbelievable that this can actually work, and really shows the hard work that the WINE team and the creator/maintainer of Yabridge has done for it to be possible!</p>
-        <p>Native Access i had gotten working before, but they’ve released a new version n3 that is not working with wine yet, but hopefully might work on a later WINE version.</p>
-        <p>But with Play working well I’m pretty much set for all the basic orchestral sounds but I still need to actually write a full piece using those to see how the performance is, since I don’t have any old projects to demo with since I used Cubase in windows for those and now use Reaper while in Linux since Cubase is not natively supported.</p>
-        <h2>Some resources/tools i used for setting things up:</h2>
-        <ul>
-            <li><a href="https://linuxmusicians.com/viewtopic.php?t=27121">Fedora low latency setup guide/documentation by Audiojunkie on the LinuxMusicians forums </a> - This is a helpful documentation on setting up Fedora for low latency work, best to read all the posts in the thread before doing any of the mentioned steps.</li>
-            <li><a href="https://github.com/robbert-vdh/yabridge">Yabridge</a> - This is the most important thing in the whole setup, it works together with Wine to be able to use most windows vst’s on linux. The github page has a guide on how to set it up depending on your distribution.</li>
-            <li><a href="https://github.com/GoranKovac/ReaScripts">SeXan’s pipewire config script for reaper</a> - This is a handy reaper script that opens a little GUI window in reaper to change the samplerate and buffer size for pipewire. You need to have the ReaPack repo manager extension installed and then import the repository with link from their github to ReaPack and then you can download the script called PipeWireConfig from there. After installing it you can make a button on the toolbar for it, add a keybind, or just call it from the actions menu when you need it.</li>
-            <li><a href="https://copr.fedorainfracloud.org/coprs/ycollet/audinux">Audinux COPR repo </a> - This is a user repository for Fedora maintained by Ycollette from the linuxmusicians forum with a lot of audio plugins/software in it so you can easily install them via your package manager.</li>
-        </ul>
-
+        <a href="../../../blog.html">&larr; Back to Blog</a>
+        <h2>Alternative Soundtrack Jam #4</h2>
+        <div class="date">10 September 2024</div>
+        <h3>Day 1</h3>
+        <p>Finally something that’s not a Nintendo game in one of these 😄.</p>
+        <p>Since the game is a sort of rhythm game, I was thinking of going with a Symphonic Rock style + using some Chiptune/Rompler sounds too, since I feel that fits the visual aesthetic of the game (feels like it, at least to me).</p>
+        <p>As always I started out with sketching out some ideas/parts with a simple polyphonic sound (a basic synth square wave in this case), and after an hour and a half, I got 2 parts sketched out.</p>
+        <p>After I felt that I couldn’t come up with anything else at the moment, I took a short break and came back a while later to listen to the sketches again and fixed some parts that sounded weird/off to me.</p>
+        <p>After the fixes, I started to think about the arrangement and the instrumentation I was going to use. Since I had wanted to go with a more symphonic rock style, I looked at the Sprite Art of the Boss in question, and saw the instruments their design had and decided to try and use those for the track (Drumkit, Strings, Brass, Keytar and Electric Bass) + some Electric Guitars, since I wanted to use them.</p>
+        <p>Since I had already sketched parts/lines beforehand, now it was mostly just arranging the parts to different instruments. After a while I had gotten some sort of an arrangement made, I felt a bit drained, so I decided to stop for the day and resume the next day.</p>
+        <h4>Day 1 state of the track:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DI-8ubzhjos?si=flYxhI3Qdk0KuWbz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Day 2</h3>
+        <p>Tweaked some parts and the drums a little, but didn’t do that much to write about in detail.</p>
+        <p>Instead of working on the track that much, I watched Aliens for the first time, which was great. Especially after having just watched Alien a couple weeks prior it was a great more Action oriented counterpart to the first film.</p>
+        <p>I also started a new playthrough of Dragon Age: Inquisition, hoping to play through it again in preparation for the release of Dragon Age: The Veilguard. This time, playing a Sword & Shield warrior after having played initially through it as a Mage and then a second playthrough as a 2 Handed Warrior.</p>
+        <p>During some tweaking later in the day, I finally found the reason for why the midi editor kept getting really laggy when there were too many notes visible, and it turned out to be that the note names displayed on the midi notes that were a bit too taxing for Reaper or My PC to display/draw so many of them at once. But after I disabled the “Show note names on notes” setting, everything was butter smooth again. If anyone reading this has had the same issues, I suggest trying disabling that option to see if it fixes the issue for you.</p>
+        <h4>Video of the midi editor with the lag and after disabling showing of note names: </h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/b8b6uU7YBGo?si=mvSX4iNcDgtf7QN3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Day 5</h3>
+        <p>For the last 2 days I didn’t work on the track at all, since I couldn’t really get any ideas for new sections to add to it. Because of that, I decided to just submit the track today, so I wont accidentally forget to submit it later.</p>
+        <h3>Final submitted track:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QdLHjUUa8WM?si=hTxrD2NaxjobXyj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <footer>
         <div class="footer">
@@ -148,16 +155,6 @@
                 body.classList.add('light-mode');
             }
             localStorage.setItem('darkMode', isDarkMode);
-        }
-        const savedDarkMode = localStorage.getItem('darkMode');
-        if (savedDarkMode === 'true') {
-            setTheme(true);
-        } else if (savedDarkMode === 'false') {
-            setTheme(false);
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme(true);
-        } else {
-            setTheme(false);
         }
         themeToggle.addEventListener('click', () => {
             const isDarkMode = body.classList.contains('dark-mode');

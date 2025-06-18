@@ -96,21 +96,19 @@
 </head>
 <body>
     <div class="container">
-        <a href="../../blog.html">&larr; Back to Blog</a>
-        <h2>Initial Setup</h2>
-        <div class="date">6 May 2025</div>
+        <a href="../../../blog.html">&larr; Back to Blog</a>
+        <h2>Trying to establish a Virtual Space with Reverbs?</h2>
+        <div class="date">30 August 2024</div>
         <!-- Blog content goes here -->
-        <p>I’ve been playing around with making music on Linux every now and then with some jam projects, but after trying different distributions and learning about what I need to run some of my Windows software on Linux, I finally decided to take the plunge fully and try to swap fully over even if I had to give up some of the orchestral/acoustic sample libraries I couldn’t get running.</p>
-        <p>I’ve tried to get the EastWest download/manager software working before using WINE, but couldn’t get the ui working correctly to install the libraries and Play engine. So this time around I saved my sample libraries to a different drive and kept the installers for the VST plugins, and to my surprise Play installed without a problem and the ILOK drm software they utilize works without a problem, so I could just tell PLAY where to find the samples and everything worked without an issue. It’s really unbelievable that this can actually work, and really shows the hard work that the WINE team and the creator/maintainer of Yabridge has done for it to be possible!</p>
-        <p>Native Access i had gotten working before, but they’ve released a new version n3 that is not working with wine yet, but hopefully might work on a later WINE version.</p>
-        <p>But with Play working well I’m pretty much set for all the basic orchestral sounds but I still need to actually write a full piece using those to see how the performance is, since I don’t have any old projects to demo with since I used Cubase in windows for those and now use Reaper while in Linux since Cubase is not natively supported.</p>
-        <h2>Some resources/tools i used for setting things up:</h2>
-        <ul>
-            <li><a href="https://linuxmusicians.com/viewtopic.php?t=27121">Fedora low latency setup guide/documentation by Audiojunkie on the LinuxMusicians forums </a> - This is a helpful documentation on setting up Fedora for low latency work, best to read all the posts in the thread before doing any of the mentioned steps.</li>
-            <li><a href="https://github.com/robbert-vdh/yabridge">Yabridge</a> - This is the most important thing in the whole setup, it works together with Wine to be able to use most windows vst’s on linux. The github page has a guide on how to set it up depending on your distribution.</li>
-            <li><a href="https://github.com/GoranKovac/ReaScripts">SeXan’s pipewire config script for reaper</a> - This is a handy reaper script that opens a little GUI window in reaper to change the samplerate and buffer size for pipewire. You need to have the ReaPack repo manager extension installed and then import the repository with link from their github to ReaPack and then you can download the script called PipeWireConfig from there. After installing it you can make a button on the toolbar for it, add a keybind, or just call it from the actions menu when you need it.</li>
-            <li><a href="https://copr.fedorainfracloud.org/coprs/ycollet/audinux">Audinux COPR repo </a> - This is a user repository for Fedora maintained by Ycollette from the linuxmusicians forum with a lot of audio plugins/software in it so you can easily install them via your package manager.</li>
-        </ul>
+        <p>Found a <a href="https://vi-control.net/community/threads/poor-mans-multi-mic-room-hall-reverb.133917/" target="_blank" rel="noopener">forum post</a> talking about blending dry sounds with other more “wet” sounds by using Convolution reverbs with different IR’s recorded at different spots in a room as Busses you send your tracks to, and then control the send levels like you would a “mic mix” in a sample library.</p>
+        <p>Took me a bit to understand the basic principles of how it works, but when I got it setup correctly, I found that it worked GREAT! The different “Mics” that you can mix felt much easier to tweak than using a reverbs Pre-delay values and whatnot to try and make things sound farther/closer away.</p>
+        <p>I looked around for some Impulse Responses (IR) that had multiple positions of a room recorded and found an IR set of the Concert Hall in Pori, here in Finland, and those IR’s worked great on my first test sketch track I made to test this setup. <a href="http://legacy.spa.aalto.fi/projects/poririrs/" target="_blank" rel="noopener">Find them here.</a></p>
+        <p>Going to try and record some vocal stuff and try to get them to blend with the other sample sounds I have, which hopefully wont be too much of a headache with this “mic mix” style of reverb.</p>
+        <p>Another great resource for working with samples/mock-ups I stumbled upon, was this <a href="https://www.gdcvault.com/play/1023727/AAA-Virtual-Orchestration-on-an" target="_blank" rel="noopener">GDC talk by the Composer Wilbert Roget</a>. It’s about an hour long talk on how he worked on “Lara Croft and the Temple Of Osiris” using virtual orchestra sounds and some live recorded instruments. Highly recommend watching the whole thing since there’s a lot of good stuff he talks about.</p>
+        <p style="text-align: center;"><strong>. . .</strong></p>
+        <h2>How the reverb setup sounds in practice</h2>
+        <p>Sounds used: the NI Noire Piano, EW Hollywood Woodwinds (Clarinet, Oboe), 8Dio Anthology Strings (Solo Violin 1 & 2, Viola and Cello)</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EifasrEl0MA?si=E_MuezQ3M8LL-IDf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     </div>
     <footer>
@@ -148,16 +146,6 @@
                 body.classList.add('light-mode');
             }
             localStorage.setItem('darkMode', isDarkMode);
-        }
-        const savedDarkMode = localStorage.getItem('darkMode');
-        if (savedDarkMode === 'true') {
-            setTheme(true);
-        } else if (savedDarkMode === 'false') {
-            setTheme(false);
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme(true);
-        } else {
-            setTheme(false);
         }
         themeToggle.addEventListener('click', () => {
             const isDarkMode = body.classList.contains('dark-mode');

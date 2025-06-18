@@ -95,6 +95,23 @@
     </style>
 </head>
 <body>
+    <script>
+        // Apply theme as early as possible to prevent white flash
+        (function() {
+            const savedDarkMode = localStorage.getItem('darkMode');
+            if (savedDarkMode === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            } else if (savedDarkMode === 'false') {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark-mode');
+            } else {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
     <div class="container">
         <a href="../../blog.html">&larr; Back to Blog</a>
         <h2>Impressions Composing Jam: Mystery #1</h2>
@@ -204,14 +221,14 @@
     <button id="theme-toggle" aria-label="Toggle theme"></button>
     <script>
         const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
+        const root = document.documentElement;
         function setTheme(isDarkMode) {
             if (isDarkMode) {
-                body.classList.add('dark-mode');
-                body.classList.remove('light-mode');
+                root.classList.add('dark-mode');
+                root.classList.remove('light-mode');
             } else {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
+                root.classList.remove('dark-mode');
+                root.classList.add('light-mode');
             }
             localStorage.setItem('darkMode', isDarkMode);
         }
@@ -226,7 +243,7 @@
             setTheme(false);
         }
         themeToggle.addEventListener('click', () => {
-            const isDarkMode = body.classList.contains('dark-mode');
+            const isDarkMode = root.classList.contains('dark-mode');
             setTheme(!isDarkMode);
         });
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {

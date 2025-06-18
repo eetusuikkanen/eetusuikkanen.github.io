@@ -179,6 +179,23 @@
     </footer>
     <button id="theme-toggle" aria-label="Toggle theme"></button>
     <script>
+        // Apply theme as early as possible to prevent white flash
+        (function() {
+            const savedDarkMode = localStorage.getItem('darkMode');
+            if (savedDarkMode === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            } else if (savedDarkMode === 'false') {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark-mode');
+            } else {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <script>
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
         function setTheme(isDarkMode) {

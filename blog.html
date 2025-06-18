@@ -86,14 +86,18 @@
             color: var(--header-text-color);
             padding: 8px 12px;
             border-radius: 5px;
-            transition: color 0.3s, background-color 0.3s;
+            transition: color 0.3s;
+            font-weight: normal;
+            background: none;
         }
-        .header-center a:hover, .header-center a.active {
+        .header-center a:hover, .header-center a:focus {
             color: var(--header-hover-color);
-            background-color: rgba(0, 0, 0, 0.1);
+            background: none;
         }
         .header-center a.active {
             font-weight: bold;
+            color: var(--header-hover-color);
+            background: none;
         }
         .header-right {
             display: flex;
@@ -232,11 +236,45 @@
             padding-bottom: 4px;
             font-size: 1.4em;
         }
+        .category-collapsible {
+            cursor: pointer;
+            user-select: none;
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 0;
+            color: var(--header-text-color);
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 4px;
+            transition: color 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .category-toggle-hint {
+            font-size: 0.75em;
+            font-weight: 400;
+            color: #888;
+            margin: 2px 0 0 0;
+            transition: color 0.2s;
+        }
+        .category-collapsible.active .category-toggle-hint {
+            color: var(--header-hover-color);
+        }
         .blog-category-list {
             margin-bottom: 24px;
+            display: none;
+            list-style: none;
+            padding: 0;
+        }
+        .blog-category-list.active {
+            display: block;
         }
         .blog-list-item {
-            background: var(--about-section-background-color); /* Match blog post background */
+            display: block;
+            background: var(--about-section-background-color);
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
             padding: 18px 20px 12px 20px;
@@ -244,21 +282,25 @@
             transition: box-shadow 0.2s, background 0.2s;
             cursor: pointer;
             position: relative;
+            color: var(--text-color);
+            text-decoration: none;
         }
         .blog-list-item:hover {
-            background: rgba(180, 180, 180, 0.25); /* Slightly darker on hover */
+            background: rgba(180, 180, 180, 0.25);
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
-        .blog-list-item a {
-            color: var(--text-color); /* Use main text color for card titles */
-            text-decoration: none;
+        .blog-list-item strong {
             font-size: 1.15em;
             font-weight: bold;
-            position: relative;
-            z-index: 2;
         }
-        .blog-list-item * {
-            pointer-events: none;
+        .blog-list-item .date {
+            display: block;
+            font-size: 0.95em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .blog-list-item p {
+            margin: 0;
         }
         /* Responsive */
         @media (max-width: 900px) {
@@ -327,37 +369,80 @@
         <section class="blog-list">
             <h1>Blog</h1>
             <div class="blog-categories">
-                <h2>Jam Journals</h2>
+                <div class="category-collapsible" onclick="toggleCategory(this)">
+                    Jam Journals
+                    <span class="category-toggle-hint">(click to extend/hide)</span>
+                </div>
                 <ul class="blog-category-list" style="list-style: none; padding: 0;">
-                    <li class="blog-list-item">
-                        <a href="blog/jam-journals/imprs-myst-1.html"><strong>Impressions Composing Jam: Mystery #1</strong></a>
+                    <a class="blog-list-item" href="blog/jam-journals/imprs-myst-1.html">
+                        <strong>Impressions Composing Jam: Mystery #1</strong>
                         <span class="date">17 June 2025</span>
                         <p>Devlog from the Impressions Composing Jam: Mystery #1 jam</p>
-                    </li>
-                    <li class="blog-list-item">
-                        <a href="blog/jam-journals/asjam2.html"><strong>Alternative Soundtrack 2</strong></a>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/imprs-imag-2.html">
+                        <strong>Impressions Composing Jam: Imagination #2</strong>
+                        <span class="date">18 November 2024</span>
+                        <p>Devlog from the Impressions Composing Jam: Imagination #2</p>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/imprs-ost-1.html">
+                        <strong>Impressions Composing Jam: OST #1</strong>
+                        <span class="date">5 November 2024</span>
+                        <p>Devlog from the Impressions Composing Jam: OST #1</p>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/alt-sndtrk-5.html">
+                        <strong>Alternative Soundtrack Jam #5</strong>
+                        <span class="date">6 October 2024</span>
+                        <p>Devlog from the Alternative Soundtrack Jam #5</p>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/imprs-amb-1.html">
+                        <strong>Impressions Composing Jam: Ambience #1</strong>
+                        <span class="date">22 September 2024</span>
+                        <p>Devlog from the Impressions Composing Jam: Ambience #1</p>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/alt-sndtrk-4.html">
+                        <strong>Alternative Soundtrack Jam #4</strong>
+                        <span class="date">10 September 2024</span>
+                        <p>Devlog from the Alternative Soundtrack Jam #4</p>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/alt-sndtrk-3.html">
+                        <strong>Alternative Soundtrack Jam #3</strong>
+                        <span class="date">28 August 2024</span>
+                        <p>Devlog from the Alternative Soundtrack Jam #3</p>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/imprs-imag-1.html">
+                        <strong>Impressions Composing Jam: Imagination Jam #1</strong>
+                        <span class="date">28 August 2024</span>
+                        <p>Devlog from the Impressions Composing Jam: Imagination #1</p>
+                    </a>
+                    <a class="blog-list-item" href="blog/jam-journals/asjam2.html">
+                        <strong>Alternative Soundtrack 2</strong>
                         <span class="date">28 August 2024</span>
                         <p>Devlog from the Alternative Soundtrack 2 Composing Jam</p>
-                    </li>
+                    </a>
                     <!-- Add more Jam Journals posts here -->
                 </ul>
-                <h2>Linux Adventures</h2>
+                <div class="category-collapsible" onclick="toggleCategory(this)">
+                    Linux Adventures
+                    <span class="category-toggle-hint">(click to extend/hide)</span>
+                </div>
                 <ul class="blog-category-list" style="list-style: none; padding: 0;">
-                    <!-- Example Linux post -->
-                    <li class="blog-list-item">
-                        <a href="blog/linux-adventures/start-of-the-linux-adventures.html"><strong>Start of the Linux audio adventures</strong></a>
+                    <a class="blog-list-item" href="blog/linux-adventures/start-of-the-linux-adventures.html">
+                        <strong>Start of the Linux audio adventures</strong>
                         <span class="date">6 May 2025</span>
                         <p>Start of something new??</p>
-                    </li>
+                    </a>
                     <!-- Add more Linux Adventures posts here -->
                 </ul>
-                <h2>General Audio Stuff</h2>
+                <div class="category-collapsible" onclick="toggleCategory(this)">
+                    General Audio Stuff
+                    <span class="category-toggle-hint">(click to extend/hide)</span>
+                </div>
                 <ul class="blog-category-list" style="list-style: none; padding: 0;">
-                    <li class="blog-list-item">
-                        <a href="blog/general-audio-stuff/welcome.html"><strong>Trying to establish a Virtual Space with Reverbs?</strong></a>
-                        <span class="date">17 June 2025</span>
+                    <a class="blog-list-item" href="blog/general-audio-stuff/trying-to-establish-a-virtual-space.html">
+                        <strong>Trying to establish a Virtual Space with Reverbs?</strong>
+                        <span class="date">30 August 2025</span>
                         <p>To be ported from the old blog</p>
-                    </li>
+                    </a>
                     <!-- Add more General posts here -->
                 </ul>
             </div>
@@ -370,24 +455,36 @@
     </footer>
     <button id="theme-toggle" aria-label="Toggle theme"></button>
     <script>
+        // Apply theme as early as possible to prevent white flash
+        (function() {
+            const savedDarkMode = localStorage.getItem('darkMode');
+            if (savedDarkMode === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            } else if (savedDarkMode === 'false') {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark-mode');
+            } else {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <script>
         // Theme toggle logic (same as index.html)
         const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.header-center');
-
+        const root = document.documentElement;
         function setTheme(isDarkMode) {
             if (isDarkMode) {
-                body.classList.add('dark-mode');
-                body.classList.remove('light-mode');
+                root.classList.add('dark-mode');
+                root.classList.remove('light-mode');
             } else {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
+                root.classList.remove('dark-mode');
+                root.classList.add('light-mode');
             }
             localStorage.setItem('darkMode', isDarkMode);
         }
-
-        // Check for saved preference on load, and for system preference
         const savedDarkMode = localStorage.getItem('darkMode');
         if (savedDarkMode === 'true') {
             setTheme(true);
@@ -398,12 +495,10 @@
         } else {
             setTheme(false);
         }
-
         themeToggle.addEventListener('click', () => {
-            const isDarkMode = body.classList.contains('dark-mode');
+            const isDarkMode = root.classList.contains('dark-mode');
             setTheme(!isDarkMode);
         });
-
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
             if (localStorage.getItem('darkMode') === null) {
                 setTheme(e.matches);
@@ -415,14 +510,31 @@
             navMenu.classList.toggle('active');
         });
 
-        // Make blog-list-item clickable
-        const blogCards = document.querySelectorAll('.blog-list-item');
-        blogCards.forEach(card => {
-            const link = card.querySelector('a');
-            if (link) {
-                card.addEventListener('click', () => {
-                    window.location.href = link.getAttribute('href');
-                });
+        // Collapsible category logic
+        function toggleCategory(element) {
+            const list = element.nextElementSibling;
+            if (list) {
+                list.classList.toggle('active');
+                element.classList.toggle('active');
+            }
+        }
+        // Collapsible categories
+        function toggleCategory(header) {
+            header.classList.toggle('active');
+            const list = header.nextElementSibling;
+            if (list.classList.contains('active')) {
+                list.classList.remove('active');
+            } else {
+                list.classList.add('active');
+            }
+        }
+        // Optionally: open the first category by default
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstHeader = document.querySelector('.category-collapsible');
+            const firstList = document.querySelector('.blog-category-list');
+            if (firstHeader && firstList) {
+                firstHeader.classList.add('active');
+                firstList.classList.add('active');
             }
         });
         </script>

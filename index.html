@@ -103,14 +103,21 @@
         .header-center a {
             text-decoration: none;
             font-size: 18px;
-            transition: color 0.3s, background-color 0.3s; /* Add background transition */
             color: var(--header-text-color);
-            padding: 8px 12px;       /* Add padding for clickability */
-            border-radius: 5px;      /* Optional: rounded corners */
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: color 0.3s;
+            font-weight: normal;
+            background: none;
         }
-        .header-center a:hover {
+        .header-center a:hover, .header-center a:focus {
             color: var(--header-hover-color);
-            background-color: rgba(0, 0, 0, 0.1); /* Subtle background on hover */
+            background: none;
+        }
+        .header-center a.active {
+            font-weight: bold;
+            color: var(--header-hover-color);
+            background: none;
         }
         .header-right {
             display: flex;
@@ -395,46 +402,36 @@
       <button id="theme-toggle"></button>
 
     <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        const reelcrafterContainer = document.getElementById('reelcrafter-container');
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.header-center');
-
-        // Function to load the correct ReelCrafter embed
-        function loadReelCrafterEmbed(isDarkMode) {
-            let embedCode = '';
-            if (isDarkMode) {
-                embedCode = `<iframe
-                  width="100%"
-                  height="400"
-                  scrolling="no"
-                  frameborder="no"
-                  src="https://play.reelcrafter.com/embed/8247146a-ee91-4069-a60d-2bbdec4a22d9">
-                </iframe>`;
+        // Apply theme as early as possible to prevent white flash
+        (function() {
+            const savedDarkMode = localStorage.getItem('darkMode');
+            if (savedDarkMode === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            } else if (savedDarkMode === 'false') {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark-mode');
             } else {
-                embedCode = `<iframe
-                  width="100%"
-                  height="400"
-                  scrolling="no"
-                  frameborder="no"
-                  src="https://play.reelcrafter.com/embed/591052d0-7500-4839-9af8-504d2a7c762f">
-                </iframe>`;
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
             }
-            reelcrafterContainer.innerHTML = embedCode; // Replace the content of the container
-        }
+        })();
+    </script>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
 
         // Function to set the theme
         function setTheme(isDarkMode) {
             if (isDarkMode) {
-                body.classList.add('dark-mode');
-                 body.classList.remove('light-mode');
+                root.classList.add('dark-mode');
+                root.classList.remove('light-mode');
             } else {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
+                root.classList.remove('dark-mode');
+                root.classList.add('light-mode');
             }
             localStorage.setItem('darkMode', isDarkMode);
-            loadReelCrafterEmbed(isDarkMode); // Reload the embed whenever the theme changes
         }
 
         // Check for saved preference on load, and for system preference
@@ -446,32 +443,49 @@
         } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             // If no preference is saved, use system preference
             setTheme(true);
-        }
-        //if no preference was made, load the light theme
-        else{
-          setTheme(false)
+        } else {
+            setTheme(false);
         }
 
         // Toggle theme on button click
         themeToggle.addEventListener('click', () => {
-            const isDarkMode = body.classList.contains('dark-mode');
-            setTheme(!isDarkMode); // Toggle the theme
+            const isDarkMode = root.classList.contains('dark-mode');
+            setTheme(!isDarkMode);
         });
 
          // Listen for system theme changes
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-             const isDarkMode = e.matches;
-            // Only set the theme IF no preference is stored
             if (localStorage.getItem('darkMode') === null) {
-                setTheme(isDarkMode);
+                setTheme(e.matches);
             }
-
-         });
+        });
 
         // Mobile menu toggle
         hamburger.addEventListener('click', () => {
           navMenu.classList.toggle('active');
         });
+
+        // Set active nav link based on current page/section
+        function setActiveNav() {
+            const navLinks = document.querySelectorAll('.header-center a');
+            const path = window.location.pathname;
+            const hash = window.location.hash;
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                // Blog page
+                if (path.endsWith('/blog.html') || path.endsWith('/blog/index.html')) {
+                    if (link.getAttribute('href').includes('blog')) link.classList.add('active');
+                } else if (hash === '#about' && link.getAttribute('href').includes('#about')) {
+                    link.classList.add('active');
+                } else if (hash === '#music' && link.getAttribute('href').includes('#music')) {
+                    link.classList.add('active');
+                } else if (hash === '#contact' && link.getAttribute('href').includes('#contact')) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        setActiveNav();
+        window.addEventListener('hashchange', setActiveNav);
     </script>
 </body>
 </html>
