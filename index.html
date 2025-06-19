@@ -76,7 +76,7 @@
             top: 0;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 10px 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -85,6 +85,23 @@
             transition: background-color 0.3s, color 0.3s;
             background-color: var(--header-background-color);
             color: var(--header-text-color);
+        }
+        .header-left, .header-right {
+            flex: 1 1 0;
+            display: flex;
+            align-items: center;
+        }
+        .header-left {
+            justify-content: flex-start;
+        }
+        .header-center {
+            flex: 0 1 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .header-right {
+            justify-content: flex-end;
         }
         .header-left {
             font-size: 24px;
@@ -99,10 +116,6 @@
             text-decoration: none;
             transition: color 0.3s;
             color: var(--header-text-color);
-        }
-        .header-center {
-            display: flex;
-            gap: 20px;
         }
         .header-center a {
             text-decoration: none;
@@ -246,6 +259,14 @@
 
         /* Media Query for Mobile */
         @media (max-width: 768px) { /* Adjust breakpoint as needed */
+            header {
+                flex-direction: row; /* Keep row layout on mobile */
+                align-items: center;
+            }
+            .header-left {
+                flex: 1 1 0;
+                justify-content: flex-start;
+            }
             .header-center {
                 display: none; /* Hide text links on mobile */
                 flex-direction: column;
@@ -260,20 +281,24 @@
             .header-center.active{
                 display: flex;
             }
-
             .header-center a {
                 display: block; /* Stack links vertically */
                 padding: 10px 20px;
                 text-align: center;
             }
-
             .hamburger {
                 display: block; /* Show hamburger icon on mobile */
+                margin-left: 0;
+                margin-right: 0;
             }
-              .about-section {
+            .header-right {
+                flex: 1 1 0;
+                justify-content: flex-end;
+            }
+            .about-section {
                 max-width: 90%; /* Adjust as needed for smaller screens */
             }
-              .about-section div {
+            .about-section div {
                 max-width: 90%; /* Adjust as needed for smaller screens */
             }
         }
@@ -333,6 +358,12 @@
         .dark-mode .logo-dark{
           display: none;  /* Hide dark logo in dark mode */
         }
+
+        /* ReelCrafter Styles */
+        .reelcrafter-light { display: block; }
+        .reelcrafter-dark { display: none; }
+        .dark-mode .reelcrafter-light { display: none; }
+        .dark-mode .reelcrafter-dark { display: block; }
     </style>
 </head>
 <body>
@@ -389,7 +420,24 @@
         <section id="music" class="section">
             <h1>Music</h1>
             <div id="reelcrafter-container">
-              <!-- ReelCrafter Embeds will be loaded here by JavaScript -->
+              <!-- ReelCrafter reel: Website White -->
+              <iframe
+                class="reelcrafter-light"
+                width="100%"
+                height="400"
+                scrolling="no"
+                frameborder="no"
+                src="https://play.reelcrafter.com/embed/591052d0-7500-4839-9af8-504d2a7c762f">
+              </iframe>
+              <!-- ReelCrafter reel: Website Black -->
+              <iframe
+                class="reelcrafter-dark"
+                width="100%"
+                height="400"
+                scrolling="no"
+                frameborder="no"
+                src="https://play.reelcrafter.com/embed/8247146a-ee91-4069-a60d-2bbdec4a22d9">
+              </iframe>
             </div>
           </section>
     </div>

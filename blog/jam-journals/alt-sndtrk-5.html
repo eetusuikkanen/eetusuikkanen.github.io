@@ -59,7 +59,7 @@
             top: 0;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 10px 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -68,6 +68,23 @@
             background-color: var(--header-background-color);
             color: var(--header-text-color);
             transition: background-color 0.3s, color 0.3s;
+        }
+        .header-left, .header-right {
+            flex: 1 1 0;
+            display: flex;
+            align-items: center;
+        }
+        .header-left {
+            justify-content: flex-start;
+        }
+        .header-center {
+            flex: 0 1 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .header-right {
+            justify-content: flex-end;
         }
         .header-left {
             font-size: 24px;
@@ -82,10 +99,6 @@
             text-decoration: none;
             transition: color 0.3s;
             color: var(--header-text-color);
-        }
-        .header-center {
-            display: flex;
-            gap: 20px;
         }
         .header-center a {
             text-decoration: none;
@@ -142,27 +155,41 @@
             transition: background-color 0.3s;
         }
         @media (max-width: 768px) {
+            header {
+                flex-direction: row; /* Keep row layout on mobile */
+                align-items: center;
+            }
+            .header-left {
+                flex: 1 1 0;
+                justify-content: flex-start;
+            }
             .header-center {
-                display: none;
+                display: none; /* Hide text links on mobile */
                 flex-direction: column;
                 position: absolute;
-                top: 100%;
+                top: 100%; /* Position below the header */
                 left: 0;
                 width: 100%;
-                background-color: var(--header-background-color);
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                z-index: 999;
+                background-color: var(--header-background-color); /* Match header */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                z-index: 999; /* Ensure it's below the header, above content */
             }
-            .header-center.active {
+            .header-center.active{
                 display: flex;
             }
             .header-center a {
-                display: block;
+                display: block; /* Stack links vertically */
                 padding: 10px 20px;
                 text-align: center;
             }
             .hamburger {
-                display: block;
+                display: block; /* Show hamburger icon on mobile */
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .header-right {
+                flex: 1 1 0;
+                justify-content: flex-end;
             }
         }
         .container {
@@ -244,9 +271,11 @@
             <a href="https://www.youtube.com/@eetusuikkanen" target="_blank">
                 <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube">
             </a>
+            <!--
             <a href="https://eetusuikkanen.wordpress.com/" target="_blank">
                 <img src="https://img.icons8.com/ios-filled/24/ffffff/wordpress.png" alt="WordPress">
             </a>
+            -->
             <a href="https://soundcloud.com/orgelon" target="_blank">
                 <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud">
             </a>

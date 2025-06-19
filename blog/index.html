@@ -1,10 +1,16 @@
-:root {
-            // ...existing code...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
             --link-color: #1a73e8;
             --link-hover-color: #0d47a1;
         }
         .dark-mode {
-            // ...existing code...
             --link-color: #90caf9;
             --link-hover-color: #42a5f5;
         }
@@ -17,4 +23,91 @@
             color: var(--link-hover-color);
             text-decoration: underline;
         }
-        // ...existing code...
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-left, .header-right {
+            flex: 1 1 0;
+            display: flex;
+            align-items: center;
+        }
+        .header-left {
+            justify-content: flex-start;
+        }
+        .header-center {
+            flex: 0 1 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .header-right {
+            justify-content: flex-end;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: row; /* Keep row layout on mobile */
+                align-items: center;
+            }
+            .header-left {
+                flex: 1 1 0;
+                justify-content: flex-start;
+            }
+            .header-center {
+                display: none; /* Hide text links on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 100%; /* Position below the header */
+                left: 0;
+                width: 100%;
+                background-color: var(--header-background-color); /* Match header */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                z-index: 999; /* Ensure it's below the header, above content */
+            }
+            .header-center.active{
+                display: flex;
+            }
+            .header-center a {
+                display: block; /* Stack links vertically */
+                padding: 10px 20px;
+                text-align: center;
+            }
+            .hamburger {
+                display: block; /* Show hamburger icon on mobile */
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .header-right {
+                flex: 1 1 0;
+                justify-content: flex-end;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <!-- Left aligned items -->
+        </div>
+        <div class="header-center">
+            <!-- Centered items, like navigation links -->
+        </div>
+        <div class="header-right">
+            <!-- Right aligned items -->
+            <!--
+                <a href="https://eetusuikkanen.wordpress.com/" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/ffffff/wordpress.png" alt="WordPress">
+                </a>
+            -->
+        </div>
+    </header>
+    <main>
+        <!-- Main content of the page -->
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>

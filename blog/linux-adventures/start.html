@@ -1,0 +1,38 @@
+        @media (max-width: 768px) { /* Adjust breakpoint as needed */
+            header {
+                flex-direction: row; /* Keep row layout on mobile */
+                align-items: center;
+            }
+            .header-left {
+                flex: 1 1 0;
+                justify-content: flex-start;
+            }
+            .header-center {
+                display: none; /* Hide text links on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 100%; /* Position below the header */
+                left: 0;
+                width: 100%;
+                background-color: var(--header-background-color); /* Match header */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                z-index: 999; /* Ensure it's below the header, above content */
+            }
+            .header-center.active{
+                display: flex;
+            }
+            .header-center a {
+                display: block; /* Stack links vertically */
+                padding: 10px 20px;
+                text-align: center;
+            }
+            .hamburger {
+                display: block; /* Show hamburger icon on mobile */
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .header-right {
+                flex: 1 1 0;
+                justify-content: flex-end;
+            }
+        }
