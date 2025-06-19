@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+        /* --- CSS Variables --- */
         :root {
             --background-color: #f5f5f5;
             --text-color: #333;
@@ -48,6 +49,117 @@
         h1, h2 {
             transition: color 0.3s;
             color: var(--text-color);
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            z-index: 1000;
+            background-color: var(--header-background-color);
+            color: var(--header-text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .header-left {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
+        }
+        .header-left a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
+        }
+        .header-center {
+            display: flex;
+            gap: 20px;
+        }
+        .header-center a {
+            text-decoration: none;
+            font-size: 18px;
+            color: var(--header-text-color);
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: color 0.3s;
+            font-weight: normal;
+            background: none;
+        }
+        .header-center a:hover, .header-center a:focus {
+            color: var(--header-hover-color);
+            background: none;
+        }
+        .header-center a.active {
+            font-weight: bold;
+            color: var(--header-hover-color);
+            background: none;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .header-right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: var(--header-text-color);
+            transition: color 0.3s;
+        }
+        .header-right a img {
+            display: block;
+            filter: var(--icon-filter);
+            transition: filter 0.3s;
+        }
+        .header-right a:hover {
+            color: var(--header-hover-color);
+        }
+        /* Hamburger styles */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            line-height: 1;
+        }
+        .hamburger-icon {
+            width: 25px;
+            height: 3px;
+            background-color: var(--hamburger-color);
+            display: block;
+            margin: 5px 0;
+            transition: background-color 0.3s;
+        }
+        @media (max-width: 768px) {
+            .header-center {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--header-background-color);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            .header-center.active {
+                display: flex;
+            }
+            .header-center a {
+                display: block;
+                padding: 10px 20px;
+                text-align: center;
+            }
+            .hamburger {
+                display: block;
+            }
         }
         .container {
             max-width: 700px;
@@ -95,9 +207,39 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="header-left">
+            <a href="../../index.html">Eetu Suikkanen</a>
+        </div>
+        <button class="hamburger" aria-label="Menu" id="hamburger">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+        </button>
+        <div class="header-center" id="navMenu">
+            <a href="../../index.html#about">About</a>
+            <a href="../../index.html#music">Music</a>
+            <a href="../../blog/index.html" class="active">Blog</a>
+            <a href="../../index.html#contact">Contact</a>
+        </div>
+        <div class="header-right">
+            <a href="https://x.com/Nenakkius" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/@eetusuikkanen" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube">
+            </a>
+            <a href="https://eetusuikkanen.wordpress.com/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/wordpress.png" alt="WordPress">
+            </a>
+            <a href="https://soundcloud.com/orgelon" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud">
+            </a>
+        </div>
+    </header>
     <div class="container">
         <a href="../../../blog.html">&larr; Back to Blog</a>
-        <h2>Alternative Soundtrack Jam #3</h2>
+        <h1>Alternative Soundtrack Jam #3</h1>
         <div class="date">28 August 2024</div>
         <h3>Day 1</h3>
         <h4>More Nintendo games... 😅</h4>
@@ -160,26 +302,43 @@
         })();
     </script>
     <script>
+        // Theme toggle logic
         const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
+        const root = document.documentElement;
         function setTheme(isDarkMode) {
             if (isDarkMode) {
-                body.classList.add('dark-mode');
-                body.classList.remove('light-mode');
+                root.classList.add('dark-mode');
+                root.classList.remove('light-mode');
             } else {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
+                root.classList.remove('dark-mode');
+                root.classList.add('light-mode');
             }
             localStorage.setItem('darkMode', isDarkMode);
         }
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+            setTheme(true);
+        } else if (savedDarkMode === 'false') {
+            setTheme(false);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
         themeToggle.addEventListener('click', () => {
-            const isDarkMode = body.classList.contains('dark-mode');
+            const isDarkMode = root.classList.contains('dark-mode');
             setTheme(!isDarkMode);
         });
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
             if (localStorage.getItem('darkMode') === null) {
                 setTheme(e.matches);
             }
+        });
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
         });
     </script>
 </body>
