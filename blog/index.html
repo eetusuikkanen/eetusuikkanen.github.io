@@ -1,0 +1,20 @@
+:root {
+            // ...existing code...
+            --link-color: #1a73e8;
+            --link-hover-color: #0d47a1;
+        }
+        .dark-mode {
+            // ...existing code...
+            --link-color: #90caf9;
+            --link-hover-color: #42a5f5;
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        a:hover, a:focus {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+        // ...existing code...

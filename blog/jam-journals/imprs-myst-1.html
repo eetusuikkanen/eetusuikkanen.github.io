@@ -22,6 +22,8 @@
             --theme-toggle-hover-background: #777;
             --theme-toggle-icon: "☀️";
             --hamburger-color: #333;
+            --link-color: #1a73e8;
+            --link-hover-color: #0d47a1;
         }
         .dark-mode {
             --background-color: black;
@@ -36,6 +38,8 @@
             --theme-toggle-hover-background: #777;
             --theme-toggle-icon: "🌙";
             --hamburger-color: white;
+            --link-color: #90caf9;
+            --link-hover-color: #42a5f5;
         }
         body {
             margin: 0;
@@ -58,8 +62,15 @@
             padding: 32px 24px;
             text-align: left;
         }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        a:hover, a:focus {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
         .date { color: #888; font-size: 0.95em; margin-bottom: 10px; }
         .footer {
             color: var(--footer-color);
@@ -260,8 +271,8 @@
         <div class="date">17 June 2025</div>
         <h3>Before the jam</h3>
         <p>Haven’t written any music since the last Impressions Jam, so this will hopefully get me to make something 😄,
-             and also a good change to give my linux audio setup a proper test to see how holds up in actual use cases.</p>
-        <p>I’ve used in linux before in a previous Impressions jam, but I had some issues getting my non native sample libraries working without performance issues (EW Play, Kontakt).</p>
+             and also a good change to give my <a href="../../blog/linux-adventures/start-of-the-linux-adventures.html">linux audio setup</a> a proper test to see how holds up in actual use cases.</p>
+        <p>I’ve used in linux before in a <a href="imprs-ost-1.html">previous Impressions jam</a>, but I had some issues getting my non native sample libraries working without performance issues (EW Play, Kontakt).</p>
         <p>But now that I’ve got my Hollywood Orchestra (Play version) and Kontakt working, I’m going to hopefully try and do some orchestral stuff for this jam to see if the WINE/Yabridge setup will work on an actual project.</p>
         <p>I made a quick template in reaper so i can just start writing as soon as the jam starts and I get an idea, but after a bit I came across a weird issue with the Play VST.</p>
         <p>After going over a certain amount of tracks using the Play VST, the plugin windows turned black or unresponsive (but still played sound and worked otherwise normally) and only returned to normal after i then turned some of the tracks off so I was not over the limit, which is really annoying since I cant edit the instruments if I have too many loaded at the same time.</p>
@@ -273,7 +284,7 @@
         <p>Or better, why cant some licenses be moved to the ILOK Cloud service, since that would be the best solution for me at this time, since now I need to remember to deactive all my ilok licenses everytime I tweak any WINE stuff, just in case my machine ID gets reset, just so I don’t need to wait a few days for all of the developers to accept my reset request 😠.</p>
         <P>But at least I came across this issue a few days before the jam and managed to get my license resets before the jam starts and can start right away with everything working.</P>
         <h3>Start of the jam/weekend</h3>
-        <p>The theme this around turned out to be 2 motifs provided by FoxHyode, instead of the usual artwork and word prompts that we can choose from to use as the main motif(s) the base our tracks on.</p>
+        <p>The theme this around turned out to be 2 motifs provided by <a href="https://foxhyode.itch.io/" target="_blank">FoxHyode</a>, instead of the usual artwork and word prompts that we can choose from to use as the main motif(s) the base our tracks on.</p>
         <h4><u>Motif 1:</u></h4>
         <img src="images/imprs-myst-1-motif-1.webp" alt="Motif 1" style="max-width:100%; height:auto; margin:16px 0;">
         <h4><u>Motif 2:</u></h4>
@@ -319,7 +330,7 @@
         <h4><u>First iteration of the in-context demo, with the new boss and shrine track:</u></h4>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/q9Q9n4FWGPs?si=K0OsL9MaLfrXmiIj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h4><u>Saturday</u></h4>
-        <p>I had tracks for all the areas/things in the game now, but still needed a track for the main title screen that comes as you boot the game. I’ve been using FoxHyode’s 2 motives almost somewhere on all of the tracks, but I was a bit undecided on whether to have the title music melody have just be one or both in the full form, or something that has bits of them in the theme.</p>
+        <p>I had tracks for all the areas/things in the game now, but still needed a track for the main title screen that comes as you boot the game. I’ve been using <b>FoxHyode’s</b> 2 motives almost somewhere on all of the tracks, but I was a bit undecided on whether to have the title music melody have just be one or both in the full form, or something that has bits of them in the theme.</p>
         <p>I decided to use the first motive as the base for the main title music, but somehow it ended up sounding too dark to be used in the main menu and was more like a dungeon theme or something.</p>
         <p>So because of that, I added an additional area to the demo between the shrine and the outside where you have to defeat to Elder One’s lackey before you can go up the stairs to the shrine and have the new music be the bgm for that area.</p>
         <p>If the submissions didn’t have a 5 min max time limit, I might’ve tried writing a new boss track for the Elder One and used the existing boss track for this enemy, but since I would be going over the limit, the music for this fight is just the basic battle theme.</p>

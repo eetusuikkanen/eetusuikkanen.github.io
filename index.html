@@ -29,6 +29,8 @@
             --theme-toggle-hover-background: #777;
             --theme-toggle-icon: "☀️";
             --hamburger-color: #333; /* Color of hamburger icon (light mode) */
+            --link-color: #1a73e8;
+            --link-hover-color: #0d47a1;
         }
 
         .dark-mode {
@@ -51,6 +53,8 @@
             --theme-toggle-hover-background: #777;
             --theme-toggle-icon: "🌙";
             --hamburger-color: white; /* Color of hamburger icon (dark mode) */
+            --link-color: #90caf9;
+            --link-hover-color: #42a5f5;
         }
 
         /* --- Base Styles (Common to Both Themes) --- */
@@ -208,6 +212,15 @@
             transition: color 0.3s;
             color: var(--footer-color);
         }
+        a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        a:hover, a:focus {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
 
 
         /* Mobile Menu Styles */
@@ -345,9 +358,9 @@
             <a href="https://www.youtube.com/@eetusuikkanen" target="_blank">
                 <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube">
             </a>
-            <a href="https://eetusuikkanen.wordpress.com/" target="_blank">
+           <!-- <a href="https://eetusuikkanen.wordpress.com/" target="_blank">
                 <img src="https://img.icons8.com/ios-filled/24/ffffff/wordpress.png" alt="WordPress">
-            </a>
+            </a> -->
             <a href="https://soundcloud.com/orgelon" target="_blank">
                 <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud">
             </a>
@@ -364,7 +377,7 @@
         <section id="about" class="section about-section">
             <div>
                 <p>Eetu Suikkanen is a composer from Finland, writing music across different styles.</p>
-                <p>He also keeps a <a href="https://eetusuikkanen.wordpress.com" target="_blank">blog</a>, where he posts about his projects/writing process</p>
+                <p>He also keeps a <a href="blog.html" target="_blank">blog</a>, where he posts about his projects/writing process</p>
                 <p>If you want to contact him, you can send him an <a href="mailto:eetu.suikkanen.music@gmail.com" target="_blank">email</a>.</p>
             </div>
         </section>
@@ -460,10 +473,14 @@
             }
         });
 
-        // Mobile menu toggle
-        hamburger.addEventListener('click', () => {
-          navMenu.classList.toggle('active');
-        });
+        // Mobile menu toggle (fix: select elements by class, not undefined vars)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.header-center');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
 
         // Set active nav link based on current page/section
         function setActiveNav() {

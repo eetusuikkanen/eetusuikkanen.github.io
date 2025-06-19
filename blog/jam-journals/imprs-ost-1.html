@@ -22,6 +22,8 @@
             --theme-toggle-hover-background: #777;
             --theme-toggle-icon: "☀️";
             --hamburger-color: #333;
+            --link-color: #1a73e8;
+            --link-hover-color: #0d47a1;
         }
         .dark-mode {
             --background-color: black;
@@ -36,6 +38,8 @@
             --theme-toggle-hover-background: #777;
             --theme-toggle-icon: "🌙";
             --hamburger-color: white;
+            --link-color: #90caf9;
+            --link-hover-color: #42a5f5;
         }
         body {
             margin: 0;
@@ -58,8 +62,15 @@
             padding: 32px 24px;
             text-align: left;
         }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        a:hover, a:focus {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
         .date { color: #888; font-size: 0.95em; margin-bottom: 10px; }
         .footer {
             color: var(--footer-color);
