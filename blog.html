@@ -575,12 +575,9 @@
         }
         // Optionally: open the first category by default
         document.addEventListener('DOMContentLoaded', () => {
-            const firstHeader = document.querySelector('.category-collapsible');
-            const firstList = document.querySelector('.blog-category-list');
-            if (firstHeader && firstList) {
-                firstHeader.classList.add('active');
-                firstList.classList.add('active');
-            }
+            // Remove 'active' from all categories so none are open by default
+            document.querySelectorAll('.category-collapsible').forEach(header => header.classList.remove('active'));
+            document.querySelectorAll('.blog-category-list').forEach(list => list.classList.remove('active'));
         });
         </script>
     </body>
