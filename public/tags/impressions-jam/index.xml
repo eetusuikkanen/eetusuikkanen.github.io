@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Impressions Jam on Eetu Suikkanen</title>
+    <link>http://localhost:1313/tags/impressions-jam/</link>
+    <description>Recent content in Impressions Jam on Eetu Suikkanen</description>
+    <generator>Hugo</generator>
+    <language>fi-FI</language>
+    <lastBuildDate>Tue, 17 Jun 2025 11:18:28 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/impressions-jam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Impressions Composing Jam: Mystery #1</title>
+      <link>http://localhost:1313/posts/impressions-mystery-1/</link>
+      <pubDate>Tue, 17 Jun 2025 11:18:28 +0300</pubDate>
+      <guid>http://localhost:1313/posts/impressions-mystery-1/</guid>
+      <description>&lt;h2 id=&#34;before-the-jam&#34;&gt;Before the jam&lt;/h2&gt;&#xA;&lt;p&gt;Haven’t written any music since the last Impressions Jam, so this will hopefully get me to make something 😄, and also a good change to give my linux audio setup a proper test to see how holds up in actual use cases.&lt;/p&gt;&#xA;&lt;p&gt;I’ve used in linux before in a previous Impressions jam, but I had some issues getting my non native sample libraries working without performance issues (EW Play, Kontakt).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impressions Composing Jam: Imagination #2</title>
+      <link>http://localhost:1313/posts/impressions-imagination-2/</link>
+      <pubDate>Mon, 18 Nov 2024 11:12:53 +0300</pubDate>
+      <guid>http://localhost:1313/posts/impressions-imagination-2/</guid>
+      <description>&lt;h2 id=&#34;day-1&#34;&gt;Day 1&lt;/h2&gt;&#xA;&lt;p&gt;Started this jam pretty much the same way I do every time, meaning I started noodling/improvising ideas with piano while looking at the theme prompts.&lt;/p&gt;&#xA;&lt;p&gt;I pretty quickly got a little melodic figure that I liked and then improvised a sketch playing around with it, intending to take a break after that and continuing forward from the sketch.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/imprs-imag-2-init-melody.webp&#34; alt=&#34;image info&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ended up getting a bit side-tracked by the Anniversary update to Half Life 2, so didn’t work on the jam for the rest of the day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impressions Composing Jam: OST #1</title>
+      <link>http://localhost:1313/posts/impressions-ost-1/</link>
+      <pubDate>Tue, 05 Nov 2024 11:03:25 +0300</pubDate>
+      <guid>http://localhost:1313/posts/impressions-ost-1/</guid>
+      <description>&lt;h2 id=&#34;day-1&#34;&gt;Day 1&lt;/h2&gt;&#xA;&lt;p&gt;As soon as I saw the picture and text themes, I felt like doing some neoclassical inspired stuff would fit the themes this time around.&lt;/p&gt;&#xA;&lt;p&gt;I have been listening to Kirill Pokrovsky’s music a lot lately, so i originally thought about doing something a bit similar to how the music he made for the Divinity games sounded, but after improvising some ideas out in the daw I decided to change over to Musescore and maybe do the whole submission as 1 big suite type orchestral thing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impressions Composing Jam: Ambience 1#</title>
+      <link>http://localhost:1313/posts/impressions-ambience-1/</link>
+      <pubDate>Sun, 22 Sep 2024 10:50:38 +0300</pubDate>
+      <guid>http://localhost:1313/posts/impressions-ambience-1/</guid>
+      <description>&lt;h2 id=&#34;day-1&#34;&gt;Day 1&lt;/h2&gt;&#xA;&lt;h3 id=&#34;time-to-do-some-atmospheric-stuff-i-guess&#34;&gt;Time to do some atmospheric stuff I guess?&lt;/h3&gt;&#xA;&lt;p&gt;Decided to use Cubase for this jam, after trying/learning Reaper for some jams/couple of months now. And in true authentic Cubase style, I managed to get Cubase to crash after only an hour 😂&lt;/p&gt;&#xA;&lt;p&gt;Came up with a short 3 note figure/motif pretty quickly after starting to improv some ideas on a piano and started to sketch out some sort of a ambient/atmospheric track around a piano improv/sketch I recorded riffing around the 3 note motif I came up with.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impressions Composing Jam: Imagination Jam #1</title>
+      <link>http://localhost:1313/posts/impressions-imagination-1/</link>
+      <pubDate>Wed, 28 Aug 2024 10:24:11 +0300</pubDate>
+      <guid>http://localhost:1313/posts/impressions-imagination-1/</guid>
+      <description>&lt;h2 id=&#34;day-1&#34;&gt;Day 1&lt;/h2&gt;&#xA;&lt;h3 id=&#34;deciding-what-to-do&#34;&gt;Deciding what to do&lt;/h3&gt;&#xA;&lt;p&gt;For this jam I wanted to try and use an old electric organ I recently got for free, so I spent the first day trying different effects and other things to make different sounds out of the organ (by itself the stops on the organ sound like dusty Gameboy Square Waves), but didn’t really feel any of the things I tried so I decided to stop for the day&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
