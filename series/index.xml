@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Eetu Suikkanen</title>
+    <link>https://eetusuikkanen.github.io/series/</link>
+    <description>Recent content in Series on Eetu Suikkanen</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 24 Jun 2025 22:38:55 +0300</lastBuildDate>
+    <atom:link href="https://eetusuikkanen.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Godot Experiments</title>
+      <link>https://eetusuikkanen.github.io/series/godot-experiments/</link>
+      <pubDate>Tue, 24 Jun 2025 22:38:55 +0300</pubDate>
+      <guid>https://eetusuikkanen.github.io/series/godot-experiments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jam Journals</title>
+      <link>https://eetusuikkanen.github.io/series/jam-journals/</link>
+      <pubDate>Tue, 17 Jun 2025 11:18:28 +0300</pubDate>
+      <guid>https://eetusuikkanen.github.io/series/jam-journals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux Adventures</title>
+      <link>https://eetusuikkanen.github.io/series/linux-adventures/</link>
+      <pubDate>Tue, 06 May 2025 23:08:43 +0300</pubDate>
+      <guid>https://eetusuikkanen.github.io/series/linux-adventures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>General Audio Stuff</title>
+      <link>https://eetusuikkanen.github.io/series/general-audio-stuff/</link>
+      <pubDate>Fri, 30 Aug 2024 22:52:56 +0300</pubDate>
+      <guid>https://eetusuikkanen.github.io/series/general-audio-stuff/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
