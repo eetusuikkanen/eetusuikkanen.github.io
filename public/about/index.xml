@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Eetu Suikkanen</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://eetusuikkanen.github.io/about/</link>
     <description>Recent content in Abouts on Eetu Suikkanen</description>
     <generator>Hugo</generator>
-    <language>fi-FI</language>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <atom:link href="https://eetusuikkanen.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/about/about/</link>
+      <link>https://eetusuikkanen.github.io/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/about/</guid>
+      <guid>https://eetusuikkanen.github.io/about/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a Finnish composer, mostly writing music in varying styles, but might dapple in some other creative endevours every now and then.&lt;/p&gt;&#xA;&lt;p&gt;This site serves mostly as a blog for the various jam events I take part in, and for some occasional posts about other stuff I&amp;rsquo;m playing around/experimenting with, but might include other stuff in the future as well.&lt;/p&gt;&#xA;&lt;p&gt;Wanna chat? Drop me an &lt;a href=&#34;mailto:eetu.suikkanen.music@gmail.com&#34;&gt;email&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;music&#34;&gt;Music&lt;/h1&gt;&#xA;&lt;h3 id=&#34;misc-tracks-from-different-jam-events&#34;&gt;Misc tracks from different jam events&lt;/h3&gt;&#xA;&lt;!-- ReelCrafter reel: POISON REEL --&gt;&#xA;&lt;iframe&#xA;  width=&#34;100%&#34;&#xA;  height=&#34;400&#34;&#xA;  scrolling=&#34;no&#34;&#xA;  frameborder=&#34;no&#34;&#xA;  src=&#34;https://play.reelcrafter.com/embed/209e4bb5-cf2d-447a-992d-bc062fec434e&#34;&gt;&#xA;&lt;/iframe&gt;&#xA;              &lt;/iframe&gt;&#xA;&lt;h3 id=&#34;compilation-of-all-of-my-solo-piano-tracks-and-sketches-from-the-last-few-years&#34;&gt;Compilation of all of my solo piano tracks and sketches from the last few years&lt;/h3&gt;&#xA;&lt;iframe style=&#34;border: 0; width: 100%; height: 472px;&#34; src=&#34;https://bandcamp.com/EmbeddedPlayer/album=319963266/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/&#34; seamless&gt;&lt;a href=&#34;https://eetusuikkanen.bandcamp.com/album/solo-piano-works-2023-2025&#34;&gt;Solo Piano Works (2023-2025) by Eetu Suikkanen&lt;/a&gt;&lt;/iframe&gt;</description>
     </item>
   </channel>

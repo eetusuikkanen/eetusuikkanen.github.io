@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux Adventures on Eetu Suikkanen</title>
-    <link>http://localhost:1313/series/linux-adventures/</link>
+    <link>https://eetusuikkanen.github.io/series/linux-adventures/</link>
     <description>Recent content in Linux Adventures on Eetu Suikkanen</description>
     <generator>Hugo</generator>
-    <language>fi-FI</language>
+    <language>en-US</language>
     <lastBuildDate>Tue, 06 May 2025 23:08:43 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/linux-adventures/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://eetusuikkanen.github.io/series/linux-adventures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Start of the Linux Adventures</title>
-      <link>http://localhost:1313/posts/start-of-the-linux-adventures/</link>
+      <link>https://eetusuikkanen.github.io/posts/start-of-the-linux-adventures/</link>
       <pubDate>Tue, 06 May 2025 23:08:43 +0300</pubDate>
-      <guid>http://localhost:1313/posts/start-of-the-linux-adventures/</guid>
+      <guid>https://eetusuikkanen.github.io/posts/start-of-the-linux-adventures/</guid>
       <description>&lt;h2 id=&#34;initial-setup&#34;&gt;Initial setup&lt;/h2&gt;&#xA;&lt;p&gt;I’ve been playing around with making music on Linux every now and then with some jam projects, but after trying different distributions and learning about what I need to run some of my Windows software on Linux, I finally decided to take the plunge fully and try to swap fully over even if I had to give up some of the orchestral/acoustic sample libraries I couldn’t get running.&lt;/p&gt;</description>
     </item>
   </channel>

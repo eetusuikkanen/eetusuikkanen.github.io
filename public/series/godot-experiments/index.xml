@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Godot Experiments on Eetu Suikkanen</title>
-    <link>http://localhost:1313/series/godot-experiments/</link>
+    <link>https://eetusuikkanen.github.io/series/godot-experiments/</link>
     <description>Recent content in Godot Experiments on Eetu Suikkanen</description>
     <generator>Hugo</generator>
-    <language>fi-FI</language>
+    <language>en-US</language>
     <lastBuildDate>Tue, 24 Jun 2025 22:38:55 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/godot-experiments/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://eetusuikkanen.github.io/series/godot-experiments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>No coding experience &#43; Co-pilot (what could go wrong.. 😅)</title>
-      <link>http://localhost:1313/posts/no-coding-experience-copilot/</link>
+      <link>https://eetusuikkanen.github.io/posts/no-coding-experience-copilot/</link>
       <pubDate>Tue, 24 Jun 2025 22:38:55 +0300</pubDate>
-      <guid>http://localhost:1313/posts/no-coding-experience-copilot/</guid>
+      <guid>https://eetusuikkanen.github.io/posts/no-coding-experience-copilot/</guid>
       <description>&lt;h2 id=&#34;what-this-is-about&#34;&gt;What this is about&lt;/h2&gt;&#xA;&lt;p&gt;Since the basic version of Microsoft&amp;rsquo;s Copilot for Visual Studio became free to use, I&amp;rsquo;ve been trying it out by making tweaks to this website I had already previously made.&lt;/p&gt;&#xA;&lt;p&gt;Using Copilot as help, I made this new &amp;ldquo;blog&amp;rdquo; section to the site, and ported over my old blog posts from my wordpress site, just so everything was under one domain name. And for just basic html and css stuff, It&amp;rsquo;s worked great, albeit It got a bit stuck in a loop trying to fix something and It needed the me to tell it what to fix by holding its hand.&lt;/p&gt;</description>
     </item>
   </channel>
