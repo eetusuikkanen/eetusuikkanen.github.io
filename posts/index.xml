@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Eetu Suikkanen</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 30 Jun 2025 14:03:44 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jul 2025 15:12:25 +0300</lastBuildDate>
     <atom:link href="https://eetusuikkanen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On my preferred notation software</title>
+      <link>https://eetusuikkanen.github.io/posts/on-my-preferred-notation-software/</link>
+      <pubDate>Mon, 14 Jul 2025 15:12:25 +0300</pubDate>
+      <guid>https://eetusuikkanen.github.io/posts/on-my-preferred-notation-software/</guid>
+      <description>&lt;h2 id=&#34;musescore-issues&#34;&gt;Musescore issues&lt;/h2&gt;&#xA;&lt;p&gt;Before I switched over to Linux, I had been using Steinberg&amp;rsquo;s Dorico as my notation software, and had been really happy with it.&#xA;But sadly getting Steinberg software running in Linux via WINE turned out to be a pain in the ass, so I decided to just start using Musescore instead, since that one is a Linux native app.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately the whole user experience in Dorico is so well made, that using other apps after that feels really slow and cumbersome, because of the fast and easy workflow that Dorico has thanks to the Popover system they&amp;rsquo;ve created.&#xA;I&amp;rsquo;ve used Musescore before, and made the sheet music for my last impressions jam submission using it, but it still feels a lot slower to use compared to Dorico.&#xA;I&amp;rsquo;m sure if I would keep using it, I would get a bit faster with it, but I encountered an issue that made me look for a way to keep using Dorico even if my main OS is linux.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Reflections, a few months after switching...</title>
       <link>https://eetusuikkanen.github.io/posts/reflections-after-a-few-months/</link>
