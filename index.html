@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Suikkanen</title>
+    <style>
+        /* --- CSS Variables --- */
+        :root {
+            /* Default (Light Mode) Colors */
+            --background-color: #f5f5f5;
+            --text-color: #333;
+            --header-background-color: #f5f5f5;
+            --header-text-color: #333;
+            --header-hover-color: #666;
+            --about-section-background-color: rgba(200, 200, 200, 0.3);
+            --contact-section-background: rgba(200, 200, 200, 0.3);
+            --contact-button-background-color: #333;
+            --contact-button-text-color: white;
+            --contact-button-border-color: #333;
+            --contact-button-hover-background-color: #555;
+            --contact-button-hover-border-color: #111;
+            --footer-color: #333;
+            --icon-filter: invert(100%);
+            --theme-toggle-background: #555;
+            --theme-toggle-hover-background: #777;
+            --theme-toggle-icon: "☀️";
+            --hamburger-color: #333; /* Color of hamburger icon (light mode) */
+            --link-color: #1a73e8;
+            --link-hover-color: #0d47a1;
+        }
+
+        .dark-mode {
+            /* Dark Mode Colors */
+            --background-color: black;
+            --text-color: white;
+            --header-background-color: black;
+            --header-text-color: white;
+            --header-hover-color: #ddd;
+            --about-section-background-color: rgba(160, 160, 160, 0.11);
+            --contact-section-background: rgba(160, 160, 160, 0.11);
+            --contact-button-background-color: white;
+            --contact-button-text-color: black;
+            --contact-button-border-color: white;
+            --contact-button-hover-background-color: grey;
+            --contact-button-hover-border-color: red;
+            --footer-color: white;
+            --icon-filter: none;
+            --theme-toggle-background: #555;
+            --theme-toggle-hover-background: #777;
+            --theme-toggle-icon: "🌙";
+            --hamburger-color: white; /* Color of hamburger icon (dark mode) */
+            --link-color: #90caf9;
+            --link-hover-color: #42a5f5;
+        }
+
+        /* --- Base Styles (Common to Both Themes) --- */
+        body {
+            margin: 0;
+            font-family: Montserrat, sans-serif;
+            text-align: center;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        h1 {
+          transition: color 0.3s;
+          color: var(--text-color);
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            z-index: 1000;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--header-background-color);
+            color: var(--header-text-color);
+        }
+        .header-left, .header-right {
+            flex: 1 1 0;
+            display: flex;
+            align-items: center;
+        }
+        .header-left {
+            justify-content: flex-start;
+        }
+        .header-center {
+            flex: 0 1 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .header-right {
+            justify-content: flex-end;
+        }
+        .header-left {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
+        }
+        .header-left a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
+        }
+        .header-center a {
+            text-decoration: none;
+            font-size: 18px;
+            color: var(--header-text-color);
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: color 0.3s;
+            font-weight: normal;
+            background: none;
+        }
+        .header-center a:hover, .header-center a:focus {
+            color: var(--header-hover-color);
+            background: none;
+        }
+        .header-center a.active {
+            font-weight: bold;
+            color: var(--header-hover-color);
+            background: none;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .header-right a {
+            margin-left: 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+            color: var(--header-text-color);
+        }
+        .header-right a img {
+            display: block;
+             transition: filter 0.3s; /* Add transition for smooth effect */
+            filter: var(--icon-filter); /* Apply the filter variable */
+        }
+        .header-right a:hover {
+           color: var(--header-hover-color);
+        }
+        .content {
+            padding: 40px 0px;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .section {
+            padding: 30px 0px;
+        }
+          .about-section {
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--about-section-background-color);
+            color: var(--text-color);
+            text-align: center;
+        }
+       .about-section div{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+       }
+
+        .contact-section {
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: var(--contact-section-background);
+            color: var(--text-color);
+        }
+        .contact-button {
+            padding: 15px 30px;
+            border: 3px solid;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+            background-color: var(--contact-button-background-color);
+            color: var(--contact-button-text-color);
+            border-color: var(--contact-button-border-color);
+        }
+
+         .contact-button:hover {
+            background-color: var(--contact-button-hover-background-color);
+            border-color: var(--contact-button-hover-border-color);
+        }
+
+        .footer {
+            padding: 10px 0px;
+            transition: color 0.3s;
+            color: var(--footer-color);
+        }
+        .footer-lower a img{
+          transition: filter 0.3s;
+          filter: var(--icon-filter);
+        }
+        .footer-lower {
+            padding: 20px 0px;
+            display: block;
+            text-decoration: none;
+            outline:none;
+            transition: color 0.3s;
+            color: var(--footer-color);
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        a:hover, a:focus {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+
+
+        /* Mobile Menu Styles */
+        .hamburger {
+            display: none; /* Hide by default on larger screens */
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            /* Center the hamburger icon vertically */
+            line-height: 1; /* Reset line-height */
+
+        }
+
+        .hamburger-icon {
+            width: 25px;
+            height: 3px;
+            background-color: var(--hamburger-color); /* Use CSS variable */
+            display: block;
+            margin: 5px 0;
+            transition: background-color 0.3s; /* Smooth color change */
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) { /* Adjust breakpoint as needed */
+            header {
+                flex-direction: row; /* Keep row layout on mobile */
+                align-items: center;
+            }
+            .header-left {
+                flex: 1 1 0;
+                justify-content: flex-start;
+            }
+            .header-center {
+                display: none; /* Hide text links on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 100%; /* Position below the header */
+                left: 0;
+                width: 100%;
+                background-color: var(--header-background-color); /* Match header */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                z-index: 999; /* Ensure it's below the header, above content */
+            }
+            .header-center.active{
+                display: flex;
+            }
+            .header-center a {
+                display: block; /* Stack links vertically */
+                padding: 10px 20px;
+                text-align: center;
+            }
+            .hamburger {
+                display: block; /* Show hamburger icon on mobile */
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .header-right {
+                flex: 1 1 0;
+                justify-content: flex-end;
+            }
+            .about-section {
+                max-width: 90%; /* Adjust as needed for smaller screens */
+            }
+            .about-section div {
+                max-width: 90%; /* Adjust as needed for smaller screens */
+            }
+        }
+
+
+          /* Floating Button Styles */
+        #theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--theme-toggle-background);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+            transition: background-color 0.3s;
+        }
+
+        #theme-toggle::before {
+            content: var(--theme-toggle-icon);
+        }
+
+        #theme-toggle:hover{
+           background-color: var(--theme-toggle-hover-background);
+        }
+
+        /* Logo Container Styles */
+        #logo {
+            text-align: center; /* Center the content within the section */
+        }
+
+        .logo-container {
+            display: inline-block; /* Make the container inline-block */
+        }
+
+        /* Corrected Logo Display Logic */
+        .logo-light {
+          display: none;  /* Hide light logo by default */
+        }
+        .logo-dark{
+          display: block; /* Show dark logo by default */
+        }
+
+        /* Show correct logo in dark mode */
+        .dark-mode .logo-light{
+          display: block; /* Show light logo in dark mode */
+        }
+
+        .dark-mode .logo-dark{
+          display: none;  /* Hide dark logo in dark mode */
+        }
+
+        /* ReelCrafter Styles */
+        .reelcrafter-light { display: block; }
+        .reelcrafter-dark { display: none; }
+        .dark-mode .reelcrafter-light { display: none; }
+        .dark-mode .reelcrafter-dark { display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#logo">Eetu Suikkanen</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+        </button>
+        <div class="header-center">
+            <a href="#about">About</a>
+            <a href="#music">Music</a>
+            <a href="https://eetusuikkanen.github.io/blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="header-right">
+            <a href="https://x.com/Nenakkius" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/@eetusuikkanen" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube">
+            </a>
+           <a href="https://eetusuikkanen.bandcamp.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/bandcamp.png" alt="Bandcamp">
+            </a>
+            <a href="https://soundcloud.com/orgelon" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud">
+            </a>
+        </div>
+    </header>
+    <!-- ABOUT SECTION-->
+    <div class="content">
+        <section id="logo" class="section">
+            <div class="logo-container">
+                <img src="images/es-website-logo-400x400-1-2.png" alt="Logo Light" width="200" height="auto" class="logo-light">
+                <img src="images/es-website-logo-400x400-1-2-dark.png" alt="Logo Dark" width="200" height="auto" class="logo-dark">
+            </div>
+        </section>
+        <section id="about" class="section about-section">
+            <div>
+                <p>Eetu Suikkanen is a composer from Finland, writing music across different styles.</p>
+                <p>He also keeps a <a href="https://eetusuikkanen.github.io/blog" target="_blank">blog</a>, where he posts about his projects/writing process</p>
+                <p>If you want to contact him, you can send him an <a href="mailto:eetu.suikkanen.music@gmail.com" target="_blank">email</a>.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <a href="mailto:eetu.suikkanen.music@gmail.com" class="contact-button">Contact</a>
+        </section>
+
+        <section id="music" class="section">
+            <h1>Music</h1>
+            <div id="reelcrafter-container">
+              <!-- ReelCrafter reel: Website White -->
+              <iframe
+                class="reelcrafter-light"
+                width="100%"
+                height="400"
+                scrolling="no"
+                frameborder="no"
+                src="https://play.reelcrafter.com/embed/591052d0-7500-4839-9af8-504d2a7c762f">
+              </iframe>
+              <!-- ReelCrafter reel: Website Black -->
+              <iframe
+                class="reelcrafter-dark"
+                width="100%"
+                height="400"
+                scrolling="no"
+                frameborder="no"
+                src="https://play.reelcrafter.com/embed/8247146a-ee91-4069-a60d-2bbdec4a22d9">
+              </iframe>
+            </div>
+          </section>
+    </div>
+        <!-- Footer -->
+        <footer>
+            <div class="header-center footer-lower">
+                <a href="https://x.com/Nenakkius" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.youtube.com/@eetusuikkanen" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube">
+                </a>
+                <a href="https://eetusuikkanen.bandcamp.com/" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/ffffff/bandcamp.png" alt="Bandcamp">
+                </a>
+                <a href="https://soundcloud.com/orgelon" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud">
+                </a>
+
+            <div class="footer"><p>© 2024 Eetu Suikkanen. All rights reserved.</p></div>
+            </div>
+          </footer>
+      <button id="theme-toggle"></button>
+
+    <script>
+        // Apply theme as early as possible to prevent white flash
+        (function() {
+            const savedDarkMode = localStorage.getItem('darkMode');
+            if (savedDarkMode === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            } else if (savedDarkMode === 'false') {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark-mode');
+            } else {
+                document.documentElement.classList.remove('dark-mode');
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+
+        // Function to set the theme
+        function setTheme(isDarkMode) {
+            if (isDarkMode) {
+                root.classList.add('dark-mode');
+                root.classList.remove('light-mode');
+            } else {
+                root.classList.remove('dark-mode');
+                root.classList.add('light-mode');
+            }
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        // Check for saved preference on load, and for system preference
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+            setTheme(true);
+        } else if (savedDarkMode === 'false') {
+            setTheme(false);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // If no preference is saved, use system preference
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const isDarkMode = root.classList.contains('dark-mode');
+            setTheme(!isDarkMode);
+        });
+
+         // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (localStorage.getItem('darkMode') === null) {
+                setTheme(e.matches);
+            }
+        });
+
+        // Mobile menu toggle (fix: select elements by class, not undefined vars)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.header-center');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Set active nav link based on current page/section
+        function setActiveNav() {
+            const navLinks = document.querySelectorAll('.header-center a');
+            const path = window.location.pathname;
+            const hash = window.location.hash;
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                // Blog page
+                if (path.endsWith('/blog') || path.endsWith('/blog/')) {
+                    if (link.getAttribute('href').includes('blog')) link.classList.add('active');
+                } else if (hash === '#about' && link.getAttribute('href').includes('#about')) {
+                    link.classList.add('active');
+                } else if (hash === '#music' && link.getAttribute('href').includes('#music')) {
+                    link.classList.add('active');
+                } else if (hash === '#contact' && link.getAttribute('href').includes('#contact')) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        setActiveNav();
+        window.addEventListener('hashchange', setActiveNav);
+    </script>
+</body>
+</html>
