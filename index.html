@@ -154,6 +154,55 @@
 </style>
 
 </head>
+<<<<<<< HEAD
+=======
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#logo">Eetu Suikkanen</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+        </button>
+        <div class="header-center">
+            <a href="#about">About</a>
+            <a href="#music">Music</a>
+            <a href="/blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="header-right">
+            <a href="https://x.com/Nenakkius" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/@eetusuikkanen" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube">
+            </a>
+           <a href="https://eetusuikkanen.bandcamp.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/bandcamp.png" alt="Bandcamp">
+            </a>
+            <a href="https://soundcloud.com/orgelon" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud">
+            </a>
+        </div>
+    </header>
+    <!-- ABOUT SECTION-->
+    <div class="content">
+        <section id="logo" class="section">
+            <div class="logo-container">
+                <img src="images/es-website-logo-400x400-1-2.png" alt="Logo Light" width="200" height="auto" class="logo-light">
+                <img src="images/es-website-logo-400x400-1-2-dark.png" alt="Logo Dark" width="200" height="auto" class="logo-dark">
+            </div>
+        </section>
+        <section id="about" class="section about-section">
+            <div>
+                <p>Eetu Suikkanen is a composer from Finland, writing music across different styles.</p>
+                <p>He also keeps a <a href="/blog" target="_blank">blog</a>, where he posts about his projects/writing process</p>
+                <p>If you want to contact him, you can send him an <a href="mailto:eetu.suikkanen.music@gmail.com" target="_blank">email</a>.</p>
+            </div>
+        </section>
+>>>>>>> fc32cbe (change to old master page)
 
     <body class="dark-theme">
         <div class="wrapper">
@@ -418,8 +467,43 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 
 
 
+<<<<<<< HEAD
             </main>
             
         </div>
     </body>
+=======
+        // Mobile menu toggle (fix: select elements by class, not undefined vars)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.header-center');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Set active nav link based on current page/section
+        function setActiveNav() {
+            const navLinks = document.querySelectorAll('.header-center a');
+            const path = window.location.pathname;
+            const hash = window.location.hash;
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                // Blog page
+                if (path.endsWith('/blog') || path.endsWith('/blog/')) {
+                    if (link.getAttribute('href').includes('blog')) link.classList.add('active');
+                } else if (hash === '#about' && link.getAttribute('href').includes('#about')) {
+                    link.classList.add('active');
+                } else if (hash === '#music' && link.getAttribute('href').includes('#music')) {
+                    link.classList.add('active');
+                } else if (hash === '#contact' && link.getAttribute('href').includes('#contact')) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        setActiveNav();
+        window.addEventListener('hashchange', setActiveNav);
+    </script>
+</body>
+>>>>>>> fc32cbe (change to old master page)
 </html>
