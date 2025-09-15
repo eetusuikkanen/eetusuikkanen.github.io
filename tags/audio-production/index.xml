@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Audio Production on Eetu Suikkanen - Music Composer</title>
-    <link>https://eetusuikkanen.github.io/tags/audio-production/</link>
+    <link>http://localhost:1313/tags/audio-production/</link>
     <description>Recent content in Audio Production on Eetu Suikkanen - Music Composer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Eetu Suikkanen</copyright>
-    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eetusuikkanen.github.io/tags/audio-production/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/audio-production/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Trying to Establish a Virtual Space</title>
-      <link>https://eetusuikkanen.github.io/blog/1757953316976-trying-to-establish-a-virtual-space/</link>
+      <link>http://localhost:1313/blog/1757953316976-trying-to-establish-a-virtual-space/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://eetusuikkanen.github.io/blog/1757953316976-trying-to-establish-a-virtual-space/</guid>
+      <guid>http://localhost:1313/blog/1757953316976-trying-to-establish-a-virtual-space/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://eetusuikkanen.github.io/blog/1757953316976-trying-to-establish-a-virtual-space/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757953316976-trying-to-establish-a-virtual-space/featured.png" />
     </item>
     
   </channel>

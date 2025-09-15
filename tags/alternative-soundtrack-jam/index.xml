@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alternative Soundtrack Jam on Eetu Suikkanen - Music Composer</title>
-    <link>https://eetusuikkanen.github.io/tags/alternative-soundtrack-jam/</link>
+    <link>http://localhost:1313/tags/alternative-soundtrack-jam/</link>
     <description>Recent content in Alternative Soundtrack Jam on Eetu Suikkanen - Music Composer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Eetu Suikkanen</copyright>
-    <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eetusuikkanen.github.io/tags/alternative-soundtrack-jam/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/alternative-soundtrack-jam/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Alternative Soundtrack Jam #5</title>
-      <link>https://eetusuikkanen.github.io/blog/1757954661057-alternative-soundtrack-jam-5/</link>
+      <link>http://localhost:1313/blog/1757954661057-alternative-soundtrack-jam-5/</link>
       <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://eetusuikkanen.github.io/blog/1757954661057-alternative-soundtrack-jam-5/</guid>
+      <guid>http://localhost:1313/blog/1757954661057-alternative-soundtrack-jam-5/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://eetusuikkanen.github.io/blog/1757954661057-alternative-soundtrack-jam-5/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757954661057-alternative-soundtrack-jam-5/featured.png" />
     </item>
     
     <item>
       <title>Alternative Soundtrack jam #4</title>
-      <link>https://eetusuikkanen.github.io/blog/1757954643007-alternative-soundtrack-jam-4/</link>
+      <link>http://localhost:1313/blog/1757954643007-alternative-soundtrack-jam-4/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://eetusuikkanen.github.io/blog/1757954643007-alternative-soundtrack-jam-4/</guid>
+      <guid>http://localhost:1313/blog/1757954643007-alternative-soundtrack-jam-4/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://eetusuikkanen.github.io/blog/1757954643007-alternative-soundtrack-jam-4/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757954643007-alternative-soundtrack-jam-4/featured.png" />
     </item>
     
     <item>
       <title>Alternative Soundtrack - music jam #2: Daily Journal</title>
-      <link>https://eetusuikkanen.github.io/blog/1757954618194-alternative-soundtrack-jam-2/</link>
+      <link>http://localhost:1313/blog/1757954618194-alternative-soundtrack-jam-2/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://eetusuikkanen.github.io/blog/1757954618194-alternative-soundtrack-jam-2/</guid>
+      <guid>http://localhost:1313/blog/1757954618194-alternative-soundtrack-jam-2/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://eetusuikkanen.github.io/blog/1757954618194-alternative-soundtrack-jam-2/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757954618194-alternative-soundtrack-jam-2/featured.png" />
     </item>
     
     <item>
       <title>Alternative Soundtrack Jam #3</title>
-      <link>https://eetusuikkanen.github.io/blog/1757954632353-alternative-soundtrack-jam-3/</link>
+      <link>http://localhost:1313/blog/1757954632353-alternative-soundtrack-jam-3/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://eetusuikkanen.github.io/blog/1757954632353-alternative-soundtrack-jam-3/</guid>
+      <guid>http://localhost:1313/blog/1757954632353-alternative-soundtrack-jam-3/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://eetusuikkanen.github.io/blog/1757954632353-alternative-soundtrack-jam-3/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757954632353-alternative-soundtrack-jam-3/featured.png" />
     </item>
     
   </channel>

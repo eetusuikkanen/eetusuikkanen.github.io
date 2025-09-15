@@ -3,121 +3,121 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757950802962-ost-composing-jam-8/</loc>
+    <loc>http://localhost:1313/blog/1757950802962-ost-composing-jam-8/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949610654-impressions-ambience-3.md/</loc>
+    <loc>http://localhost:1313/blog/1757949610654-impressions-ambience-3.md/</loc>
     <lastmod>2025-08-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949662705-on-my-new-template/</loc>
+    <loc>http://localhost:1313/blog/1757949662705-on-my-new-template/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949649939-on-hold-for-now/</loc>
+    <loc>http://localhost:1313/blog/1757949649939-on-hold-for-now/</loc>
     <lastmod>2025-07-27T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949682759-on-my-preferred-notation-software/</loc>
+    <loc>http://localhost:1313/blog/1757949682759-on-my-preferred-notation-software/</loc>
     <lastmod>2025-07-14T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949697003-reflections-after-a-few-months/</loc>
+    <loc>http://localhost:1313/blog/1757949697003-reflections-after-a-few-months/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757953301190-no-coding-experience-copilot/</loc>
+    <loc>http://localhost:1313/blog/1757953301190-no-coding-experience-copilot/</loc>
     <lastmod>2025-06-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949741177-imptressions-mystery-1/</loc>
+    <loc>http://localhost:1313/blog/1757949741177-imptressions-mystery-1/</loc>
     <lastmod>2025-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949709680-start-of-the-linux-adventures/</loc>
+    <loc>http://localhost:1313/blog/1757949709680-start-of-the-linux-adventures/</loc>
     <lastmod>2025-05-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757953243744-impressions-imagination-2/</loc>
+    <loc>http://localhost:1313/blog/1757953243744-impressions-imagination-2/</loc>
     <lastmod>2024-11-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757953230023-impressions-ost-1/</loc>
+    <loc>http://localhost:1313/blog/1757953230023-impressions-ost-1/</loc>
     <lastmod>2024-11-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757954661057-alternative-soundtrack-jam-5/</loc>
+    <loc>http://localhost:1313/blog/1757954661057-alternative-soundtrack-jam-5/</loc>
     <lastmod>2024-10-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757949722888-impressions-ambience-1/</loc>
+    <loc>http://localhost:1313/blog/1757949722888-impressions-ambience-1/</loc>
     <lastmod>2024-09-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757954643007-alternative-soundtrack-jam-4/</loc>
+    <loc>http://localhost:1313/blog/1757954643007-alternative-soundtrack-jam-4/</loc>
     <lastmod>2024-09-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757953316976-trying-to-establish-a-virtual-space/</loc>
+    <loc>http://localhost:1313/blog/1757953316976-trying-to-establish-a-virtual-space/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757954618194-alternative-soundtrack-jam-2/</loc>
+    <loc>http://localhost:1313/blog/1757954618194-alternative-soundtrack-jam-2/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757954632353-alternative-soundtrack-jam-3/</loc>
+    <loc>http://localhost:1313/blog/1757954632353-alternative-soundtrack-jam-3/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eetusuikkanen.github.io/blog/1757953272049-impressions-imagination-1/</loc>
+    <loc>http://localhost:1313/blog/1757953272049-impressions-imagination-1/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
