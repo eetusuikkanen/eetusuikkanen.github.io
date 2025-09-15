@@ -3,7 +3,7 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - main
+      - master
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
