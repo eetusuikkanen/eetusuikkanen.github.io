@@ -1,22 +1,16 @@
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site to gh-pages branch
 
 on:
+  # Runs on pushes targeting the master branch
   push:
     branches:
       - master
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,24 +22,15 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.141.0' # This version matches your theme's requirement
+          hugo-version: '0.141.0' # The version your theme needs
           extended: true
 
       - name: Build with Hugo
-        run: hugo --minify --baseURL "${{ vars.BASE_URL || '/' }}"
+        # We explicitly set the final URL for your site here
+        run: hugo --minify --baseURL "https://eetusuikkanen.github.io/"
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: ./public
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public   # The folder the action should deploy.
