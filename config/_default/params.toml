@@ -1,0 +1,116 @@
+colorScheme = "blowfish"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+enableA11y = false
+enableSearch = true
+enableCodeCopy = "enable"
+replyByEmail = false
+disableImageOptimization = false
+disableImageOptimizationMD = false
+disableTextInHeader = false
+fingerprintAlgorithm = "sha512"
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v11.next.forgejo.org"
+firebase = { }
+fathomAnalytics = { }
+umamiAnalytics = { }
+selineAnalytics = { }
+buymeacoffee = { }
+verification = { }
+rssnext = { }
+advertisement = { }
+defaultBackgroundImage = "DAYDREAM BG.png"
+highlightCurrentMenuArea = true
+smartTOC = "Enable"
+defaultFeaturedImage = "DAYDREAM BG.png"
+
+[header]
+layout = "fixed-fill-blur"
+
+[footer]
+showMenu = true
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "background"
+showRecent = "enable"
+showRecentItems = 5
+showMoreLink = "enable"
+showMoreLinkDest = "/blog/"
+cardView = "enable"
+cardViewScreenWidth = false
+layoutBackgroundBlur = "enable"
+disableHeroImageFilter = false
+homepageImage = "DAYDREAM BG.png"
+
+[article]
+showDate = true
+showViews = false
+showLikes = false
+showDateOnlyInArticle = false
+showDateUpdated = false
+showAuthor = true
+showHero = "show"
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = "show"
+showDraftLabel = true
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = true
+showTableOfContents = "show"
+showTaxonomies = "show"
+showCategoryOnly = false
+showAuthorsBadges = false
+showWordCount = true
+showZenMode = "show"
+heroStyle = "background"
+showRelatedContent = "show"
+relatedContentLimit = "6"
+
+[list]
+showHero = "hide"
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = false
+showBreadcrumbs = "show"
+showSummary = "show"
+showViews = false
+showLikes = false
+showTableOfContents = "hide"
+showCards = "enable"
+orderByWeight = false
+groupByYear = true
+cardView = "disable"
+cardViewScreenWidth = "disable"
+constrainItemsWidth = "disable"
+heroStyle = "background"
+
+[sitemap]
+excludedKinds = [ "taxonomy", "term" ]
+
+[taxonomy]
+showTermCount = true
+showHero = "hide"
+showBreadcrumbs = "show"
+showViews = false
+showLikes = false
+showTableOfContents = "show"
+cardView = "enable"
+heroStyle = "background"
+
+[term]
+showHero = "hide"
+showBreadcrumbs = false
+showViews = false
+showLikes = false
+showTableOfContents = true
+groupByYear = false
+cardView = false
+cardViewScreenWidth = ""

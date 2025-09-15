@@ -1,0 +1,32 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Eetu Suikkanen - Music Composer"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "es-website-logo-400x400-1-2-dark.png"
+secondaryLogo = "ES WEBSITE LOGO 400x400.png"
+description = "Eetu Suikkanen - Composer"
+
+[[params.author.links]]
+bluesky = "https://bsky.app/profile/eetusuikkanen.bsky.social"
+
+[[params.author.links]]
+soundcloud = "https://soundcloud.com/orgelon"
+
+[[params.author.links]]
+twitter = "twitter.com/nenakkius"
+
+[[params.author.links]]
+youtube = "https://www.youtube.com/@eetusuikkanen"
+
+["params.author"]
+name = "Eetu Suikkanen"
+bio = "Music Composer"
+headline = "Finnish composer, writing music in varying styles. This is my personal website and blog"
+image = "PÄÄOSUMA.png"

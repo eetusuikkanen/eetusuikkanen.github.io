@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Godot Experiments on Eetu Suikkanen - Music Composer</title>
+    <link>http://localhost:1313/tags/godot-experiments/</link>
+    <description>Recent content in Godot Experiments on Eetu Suikkanen - Music Composer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Eetu Suikkanen</copyright>
+    <lastBuildDate>Tue, 24 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/godot-experiments/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>No coding experience &#43; Co-pilot (what could go wrong..</title>
+      <link>http://localhost:1313/blog/1757953301190-no-coding-experience-copilot/</link>
+      <pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/1757953301190-no-coding-experience-copilot/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757953301190-no-coding-experience-copilot/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
