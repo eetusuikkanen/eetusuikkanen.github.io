@@ -41,7 +41,7 @@ Also the quest is cleared when you defeat Verag, so when you find him, you need 
 
 ## Give the rough version a try?
 
-If you go [here](https://eetusuikkanen.github.io/cargoquest/Endevour.html), you can try out the first, kind of playable demo. 
+If you go [here](https://eetusuikkanen.github.io/zorkquest/cargoquest/Endevour.html), you can try out the first, kind of playable demo. 
 	
 
     
