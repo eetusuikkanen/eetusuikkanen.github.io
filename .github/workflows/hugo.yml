@@ -1,15 +1,19 @@
-name: GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
   push:
     branches:
       - main
 
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build-deploy:
-    runs-on: ubuntu-24.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,20 +24,24 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v4
         with:
-          hugo-version: '0.129.0' # Specify the version you want
+          hugo-version: '0.129.0' # Or a newer version
           extended: true
 
-      - name: Build
-        run: hugo --minify
-        env:
-          # This line forces the workflow to use the version installed
-          # in the previous step, overriding any external variables.
-          HUGO_VERSION: '0.129.0'
+      - name: Build with Hugo
+        run: hugo --minify --baseURL "${{ vars.PAGES_BASE_URL || '/' }}"
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./public
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4```
