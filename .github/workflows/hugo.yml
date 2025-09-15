@@ -50,5 +50,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4```
-
-After you commit this change, the workflow will trigger, it will successfully find the Hugo setup action, and your build should finally complete as intended.
