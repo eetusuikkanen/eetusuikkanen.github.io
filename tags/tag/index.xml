@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag on Eetu Suikkanen - Music Composer</title>
+    <link>http://localhost:1313/tags/tag/</link>
+    <description>Recent content in Tag on Eetu Suikkanen - Music Composer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Eetu Suikkanen</copyright>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>trying-to-establish-a-virtual-space</title>
+      <link>http://localhost:1313/blog/1757953316976-trying-to-establish-a-virtual-space/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/1757953316976-trying-to-establish-a-virtual-space/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757953316976-trying-to-establish-a-virtual-space/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
