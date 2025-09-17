@@ -17,10 +17,13 @@ description = "Eetu Suikkanen - Composer"
 bluesky = "https://bsky.app/profile/eetusuikkanen.bsky.social"
 
 [[params.author.links]]
+email = "mailto:eetu.suikkanen.music@gmail.com"
+
+[[params.author.links]]
 soundcloud = "https://soundcloud.com/orgelon"
 
 [[params.author.links]]
-twitter = "twitter.com/nenakkius"
+twitter = "https://x.com/nenakkius"
 
 [[params.author.links]]
 youtube = "https://www.youtube.com/@eetusuikkanen"
@@ -28,5 +31,5 @@ youtube = "https://www.youtube.com/@eetusuikkanen"
 ["params.author"]
 name = "Eetu Suikkanen"
 bio = "Music Composer"
-headline = "Finnish composer, writing music in varying styles. This is my personal website and blog"
+headline = "Finnish composer, writing music in varying styles.<br>This is my personal website and blog"
 image = "PÄÄOSUMA.png"
