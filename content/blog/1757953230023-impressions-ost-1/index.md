@@ -20,7 +20,7 @@ After a couple of hours i got a short foreboding introduction section that would
 
 At this point i felt I’d got enough done for today.
 ### Day 1 progress
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aDICGEhJT8I?si=0UM_MtiOhNCEiS8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="aDICGEhJT8I" label="hi" >}}
 
 ## Day 2
 Didn’t do much today, except a little stuff on the second part.
@@ -29,7 +29,7 @@ Mostly played Outward instead, which i can recommend for anyone who doesn’t mi
 
 ## Day 3
 Only did some piano sketching and slight tweaking in Musescore since i felt a bit uninspired today.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DWq7A1yh45A?si=DDc09PFsBPId_eko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="DWq7A1yh45A" label="hi" >}}
 
 ## Rest of the jam
 
@@ -63,151 +63,78 @@ Listening to the track later, i felt that some of the vocal parts were a bit cra
 
 Even though I managed to get just this one track done, All in all i was happy, since I’d wanted to do some power metal inspired stuff before but never had the motivation to start and finish anything when it wasn’t for a jam 😅.
 ## Final submitted track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uJIDiZmqwKw?si=Qxfo3K0GfWYm0pWe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="uJIDiZmqwKw" label="hi" >}}
 
 ## Final lyrics
-*These are what i had written down, but might’ve changed some words a bit while recording them*
-
-
-**Chorus? x2 Voice + Choir**
-
-
-You can pray, but  
-Death comes for all
-
-No one lives forever~
-
-You can hide, but  
-Death will find you
-
-Take your soul away~
-
-———————–
-
-**Goblin Choir**
-
-
-You can pray
-
-You can hide
-
-No one’s coming,  
-To save your life 
-
-You can pray
-
-You can hide
-
-No one’s coming,  
-So save your lies
-
-———————–
-
-**Main 1 Voice**
-
-
-Remember you must die  
-
-Death comes for all
-
-No one lives forever
-
-Remember you will die
-
-You can pray or hide
-
-But, no one’s coming to save you
-
-Death is final
-
-———————–
-
-**Main cont. 2 Voices**
-
-
-So, don’t be afraid sweet darling
-
-Death comes for all
-
-You may run, you may pray, you may hide
-
-Just delay what’s to come­­­­~
-
-He will come, He will find, He will take you
-
-He will make you understand~
-
-You may pray, You may run, You may hide~
-
-But you still must die~
-
-———————–
-
-**Heroic part Voice + Choir**
-
-
-We will not hide
-
-We will not run
-
-We will stand and fight~
-
-We will stay here
-
-Stand our ground~
-
-Death will not come for anyone~
-
-So, remember
-
-We will not die~
-
-Death will not take anyone~
-
-So, we will fight
-
-For whats right
-
-Send Death back to where he belongs!~
-
-———————–
-
-**Heroic Rep. 2 Voices**
-
-
-We will not hide
-
-We will not run
-
-We will stand and fight~
-
-We will stay here
-
-Stand our ground~
-
-Death will not take anyone~
-
-So, remember
-
-We will not die
-
-Death will not take anyone~
-
-Send Death back to
-
-Where he, belongs~~~~
-
-———————–
-
-**Victory Voice + Choir**
-
-
-So, we’ll ffight
-
-Till the daylight shines
-
-Once more~~~~
-
-Once more~
-
-
+You can pray, but,    
+Death comes for all,  
+No one lives forever.  
+
+You can hide, but,   
+Death will find you,  
+Take your soul away.  
+———————–  
+You can pray,  
+You can hide,  
+No one’s coming,    
+To save your life.   
+
+You can pray,  
+You can hide,  
+No one’s coming,    
+So save your lies.  
+———————–  
+Remember you must die,   
+Death comes for all.  
+No one lives forever,  
+Death comes for all.  
+
+Remember you will die,  
+You can pray or hide.  
+But, no one’s coming to save you,  
+Death is final.  
+———————–  
+So, don’t be afraid sweet darling,  
+Death comes for all.  
+You may run, you may pray, you may hide,  
+Just delay what’s to come­­­­.  
+
+He will come, He will find, He will take you,  
+He will make you understand.  
+You may pray, You may run, You may hide,  
+But you still must die.  
+———————–  
+We will not hide,  
+We will not run,  
+We will stand and fight.  
+
+We will stay here,  
+Stand our ground,  
+Death will not come for anyone.  
+
+So, remember,  
+We will not die,  
+Death will not take anyone.  
+
+So, we will fight,  
+For whats right,  
+Send Death back to where he belongs!  
+———————–  
+We will not hide,  
+We will not run,  
+We will stand and fight.  
+
+We will stay here,  
+Stand our ground,  
+Death will not take anyone.  
+
+So, remember,  
+We will not die,  
+Death will not take anyone-  
+Send Death back to,  
+Where he, belongs.  
+———————–  
+So, we’ll fight,  
+Till the daylight shines,  
+Once more,  
+Once more.  

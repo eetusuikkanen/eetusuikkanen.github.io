@@ -17,7 +17,7 @@ Usually when I come up with a basic melody/motive, I like to then start recordin
 But really have 0 ideas on what type of stuff or sounds i'm going to do/use, Ambient? Orchestral? Synths? Acoustic Instruments?, so I'm stopping here for today and then hopefully with fresh ears and mind, tomorrow I'll get some ideas on where to go forward from this piano skeleton track.
 
 ### Piano skeleton of the first idea: 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3r1GRqJXzfw?si=dwC0uP60JMXCcxDV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtubeLite id="3r1GRqJXzfw" label="hi" >}}
 
 ## Day 1 cont.
 I said I would stop for the day, but got some weird burst of energy late at night and split up the sketch to individual lines/voices and put those on a string section.
@@ -47,7 +47,7 @@ I made the intro parts melody be slightly different, so that when it changes to 
 
 I'm not sure if I'll keep the intro as just solo piano, or if I'll arrange it to something, but if I keep it as just solo piano, I'll probably need to clean up the midi of my performance to make it not sound so sloppily played, or maybe I'll just leave it as is for the human factor, even if its a bit crap at parts 😁.
 ### The new piano sketch leading into the orchestra 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x7sW2Us7RTk?si=TVvkAXf4DOEMcYO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtubeLite id="x7sW2Us7RTk" label="hi" >}}
 
 ## Final Day
 
@@ -68,5 +68,4 @@ I was a bit 50/50 if I should just cut out the whole intro part since I couldn't
 I should've added the piano somewhere in the arrangement of the orchestra part, but as I mentioned, I'm really feeling uninspired to work more on the track, so it is what it is I guess...😅.
 
 ## Final Submitted Track
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VP0T-FgC0zE?si=42DqfSC2efS-jSvD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtubeLite id="VP0T-FgC0zE" label="hi" >}}

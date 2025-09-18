@@ -48,4 +48,4 @@ So I just decided to try some stuff every day hoping something sticks, but ultim
 The singing/mumbling is what I usually like to do when thinking of lead parts/melodies, and sometimes I do the same thing with whistling instead. (There’s a fun [“hack”](https://www.youtube.com/watch?v=xrWBtnlao1c) with the Pitch Correction tool in Cubase, where you can take the Note and Pitch Bend data from the audio recordings, and use that then to control a VST with the recorded “performance”)
 
  ## The actual final submitted track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_ijiJ6viQn4?si=SuiYe7De-NqXbO7j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="_ijiJ6viQn4" label=":D" >}}

@@ -1,7 +1,7 @@
 ---
 title: "Impressions Composing Jam: Vignette #1"
 date: 2025-09-16
-draft: true
+draft: false
 description: "Devlog for Impressions Composing Jam: Vignette #1"
 tags: ["impressions jam", "devlog", "jam"]
 ---
@@ -28,4 +28,5 @@ Arranging was just mostly deciding which instruments play what line, and I mostl
 In the latter part and slightly at the end of the first part, I put a lot of the sections in 2 part divisi to get a little extra textural flavour since this library has actual divisi samples and wanted to test those in practice. and it worked pretty nicely in my opinion (at least feel like that for now..), but still feel that the switch from the first section to the later parts feels bit jarring with the celeste coming in and all, so will see if it still feels off after a break.
 
 #### First idea arrangement test
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OdbgYhEsuxY?si=NxXCGg4K853N4pTb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtubeLite id="OdbgYhEsuxY" label="First idea arrangement test" >}}
+### Day 2

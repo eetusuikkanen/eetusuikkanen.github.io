@@ -35,7 +35,7 @@ I still feel the second part is not that great + probably needs a bass part, but
 Hopefully I won’t lose steam for the rest of the jam after such a good first day, like I usually do 😂.
 
 ### State of the track after the first day:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5npRI2UKvnc?si=XymBulelhvb_e182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="5npRI2UKvnc" label="hi" >}}
 
 ## Day 2
 Spent the morning tweaking stuff that felt a bit crap after listening with fresh ears and added a bass line to the second section, but didn’t do anything else after that.
@@ -47,4 +47,4 @@ So because of that I’ll just submit the track as it is now, since It feels goo
 Made a quick video with the same graphics I’ve used on previous jams, uploaded that to Youtube and submitted a day early in case I forget to do that.
 
 ### Final submitted track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Tx1qxng3X4?si=u2XR_jjN8k9Tl9r5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="5Tx1qxng3X4" label="hi" >}}

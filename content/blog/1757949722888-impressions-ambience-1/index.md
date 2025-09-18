@@ -21,7 +21,7 @@ Felt I had done enough for today, so I stopped for the day.
 > I’ve found that working for an hour or two on a track is the most productive period for me, since after an hour or two I don’t really get much done. So I usually take a break after an hour or two and come back later with fresh ears and usually feeling more creative.
 
 ### The final state of the Day 1 sketch:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7GO65ShTbY8?si=VyNj5DhAqrgpwXXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="7GO65ShTbY8" label="hi" >}}
 
 ## Day 2
 Remembered last night that I got the demo license for the Vienna MIR Pro 3D convolution reverb a week ago, so I decided to use that today to try and experiment with different distances between the sounds and instruments to get a nice “ambiance”, for which the MIR Pro turned out be really great and intuitive to use (its a bit pricy though, so not sure if I can ever justify spending that much money on a reverb😅)
@@ -34,7 +34,7 @@ After adding those to the project I felt that I had a pretty good amount of inst
 
 I also removed all the effects on the vocals that made them pretty unintelligible and only used MIR Pro to put them in a space with the other sounds. I’m still a bit 50/50 if I’m going to do keep the vocal stuff or not, but I will decide on that later in the arranging process.
 ### How it sounded after the changes I made in the morning:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0seqnipsf6g?si=4X0MkjscLMFUgNIC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="0seqnipsf6g" label="hi" >}}
 
 ## Day 7
 So….. I didn’t work on the track that much since Day 2 because even if I tried to start working on it, I really wasn’t feeling it at all. So I made the decision to just start fresh with a new track in a totally different style/direction. Since I previously used mostly real/acoustic instruments I decided to do the opposite for this one and just use synthesizers.
@@ -64,7 +64,7 @@ While trying to come up with lyric ideas, I got some strong winter feelings from
 But seeing as I had started work on this track 2 hours ago and it was getting pretty late already, I decided to stop for the day and hopefully try and come up with some tomorrow.
 
 ### First sketch of the new track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pgtBh3d1YgY?si=zjMLJvSHXUsq3WEX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="pgtBh3d1YgY" label="hi" >}}
 
 ## Day 8
 Didn’t do much today. Just tweaked the voice leading to flow better thanks to FoxHyode’s recommendations on the jam discord and tried out to come up with some lyrics (not much luck on that part😅).
@@ -81,4 +81,4 @@ After a couple google searches I found a nice landscape painting by the Finnish 
 Now all that was left was submitting, so I’ll end my rambling here 😌 
 
 ## Final submitted track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/84jYNJVPdsk?si=Q1OwA7SefG-nm9HN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="84jYNJVPdsk" label="hi" >}}

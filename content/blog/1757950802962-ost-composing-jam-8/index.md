@@ -266,5 +266,4 @@ Now it's just uploading this blog post to my github page and link this to the su
 Anyway, thats all for me.
 
 ### Final submission
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=LNUuw_YvslJ2L7Y7&amp;list=PLWYTK0hyTPxis1uT-32hNwT6U0aVFK3d0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtubeLite id="pZnHC32fL3M" label="hi" >}}

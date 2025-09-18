@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Eetu Suikkanen</copyright>
-    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Devlog</title>
       <link>http://localhost:1313/tags/devlog/</link>
-      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/devlog/</guid>
       <description></description>
@@ -20,9 +20,19 @@
     </item>
     
     <item>
+      <title>Impressions Jam</title>
+      <link>http://localhost:1313/tags/impressions-jam/</link>
+      <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/impressions-jam/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Jam</title>
       <link>http://localhost:1313/tags/jam/</link>
-      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/jam/</guid>
       <description></description>
@@ -35,16 +45,6 @@
       <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/ostcomposingjam/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Impressions Jam</title>
-      <link>http://localhost:1313/tags/impressions-jam/</link>
-      <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/impressions-jam/</guid>
       <description></description>
       
     </item>

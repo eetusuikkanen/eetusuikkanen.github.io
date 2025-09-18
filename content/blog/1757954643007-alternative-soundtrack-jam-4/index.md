@@ -18,7 +18,7 @@ After the fixes, I started to think about the arrangement and the instrumentatio
 
 Since I had already sketched parts/lines beforehand, now it was mostly just arranging the parts to different instruments. After a while I had gotten some sort of an arrangement made, I felt a bit drained, so I decided to stop for the day and resume the next day.
 ### Day 1 state of the track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DI-8ubzhjos?si=flYxhI3Qdk0KuWbz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="DI-8ubzhjos" label="hi" >}}
 
 ## Day 2
 Tweaked some parts and the drums a little, but didn’t do that much to write about in detail.
@@ -30,9 +30,9 @@ I also started a new playthrough of Dragon Age: Inquisition, hoping to play thro
 During some tweaking later in the day, I finally found the reason for why the midi editor kept getting really laggy when there were too many notes visible, and it turned out to be that the note names displayed on the midi notes that were a bit too taxing for Reaper or My PC to display/draw so many of them at once. But after I disabled the “Show note names on notes” setting, everything was butter smooth again. If anyone reading this has had the same issues, I suggest trying disabling that option to see if it fixes the issue for you.
 
 ### Video of the midi editor with the lag and after disabling showing of note names: 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b8b6uU7YBGo?si=mvSX4iNcDgtf7QN3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="b8b6uU7YBGo" label="hi" >}}
 
 ## Day 5
 For the last 2 days I didn’t work on the track at all, since I couldn’t really get any ideas for new sections to add to it. Because of that, I decided to just submit the track today, so I wont accidentally forget to submit it later.
 ### Final submitted track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QdLHjUUa8WM?si=hTxrD2NaxjobXyj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="QdLHjUUa8WM" label="hi" >}}

@@ -37,7 +37,7 @@ Moving around in the score was slightly laggy, but that was on my older setup to
 At this point I was pretty much set, since now I can just boot in to the windows VM to use dorico, and I don't really keep the notation app open at the same time as the DAW anyway, since I usually write the whole thing first in notation before heading to the daw, so the extra cpu load and what not from having it in a  VM doesn't really matter to me.
 
 **The windows virtual machine successfully running Dorico!**
-![Its alive!](/posts/images/its_alive.png)
+![Its alive!](/its_alive.png)
 
 
 ## Extra QOL fiddling
@@ -67,7 +67,7 @@ Luckily came across one person recommending to kinda do the same thing, but via 
 
 After doing the same setup there, I tried booting the VM from the script and It booted straight to Virtual Desktop 3, just like i wanted it to! Now everything works great, and I'm really looking forward to a jam where I might get to trial out this Dorico setup.
 
-![](/posts/images/vdesktopsexmp.png)
+![](/vdesktopsexmp.png)
 
 >How I've got my virtual desktops setup, Obsidian for notes on Desktop 1 **NOTE**, browser and daw etc. on Desktop 2 **MAIN** and now the windows VM for Dorico on Desktop 3 **VM**
 

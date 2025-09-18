@@ -108,7 +108,7 @@ While working on the demo game, the sort of visual feedback i got from making st
 Later I managed to get the demo game in a state where it was some form of a playable experience,
 
 ### First iteration of the in-context demo, with the new boss and shrine track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q9Q9n4FWGPs?si=K0OsL9MaLfrXmiIj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="q9Q9n4FWGPs" label="hi" >}}
 
 ## Saturday
 I had tracks for all the areas/things in the game now, but still needed a track for the main title screen that comes as you boot the game. I’ve been using FoxHyode’s 2 motives almost somewhere on all of the tracks, but I was a bit undecided on whether to have the title music melody have just be one or both in the full form, or something that has bits of them in the theme.
@@ -120,7 +120,7 @@ So because of that, I added an additional area to the demo between the shrine an
 If the submissions didn’t have a 5 min max time limit, I might’ve tried writing a new boss track for the Elder One and used the existing boss track for this enemy, but since I would be going over the limit, the music for this fight is just the basic battle theme.
 
 ### In-context demo with new area and “dungeon” music:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q_bkbdPudDk?si=gLO1o4jfZBfGg2Gx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="q_bkbdPudDk" label="hi" >}}
 
 ## Sunday
 Spent a couple of hours in the morning trying to come up with a new tune for the title screen, and after a while i got something i was somewhat happy with and decided to stop there, then come back later with fresh ears to hear how actually bad it was 😁.
@@ -138,7 +138,7 @@ I’m still not sure if I’m uploading this anywhere, since the version of RPGM
 But as things are now, I’m probably going to submit what I have now tomorrow, but first I’m going to get my volume levels/mastering uniform.
 
 ### Final test before submitting?
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-g4Y3aV2-Bg?si=rL7o0P7yUFsBoe_R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="-g4Y3aV2-Bg" label="hi" >}}
 
 ## Submitting day!
 So, most of the tracks felt pretty OK to me, so all that was left was mastering everything and recording the gameplay footage of the context demo rpg game.
@@ -169,7 +169,7 @@ The jam deadline got extended by 2 days, but since I already managed to submit b
 And there were already a couple of tracks that were not meant to be loops, like TITLE SCREEN and the VICTORY! and GAME OVER jingles (I also forgot to show the game over bit in the demo game recording… 😅).
 
 ## Final submission:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hyXIPihTjGk?si=c2nNdlUlQAdKEkHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="hyXIPihTjGk" label="hi" >}}
 
-## Final in-context demo footage
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Zp48Qt2UVOs?si=K6boV7ydIMXVUMoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+## Final in-context demo footage:
+{{< youtubeLite id="Zp48Qt2UVOs" label="hi" >}}

@@ -9,6 +9,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/blog/1758040147183-impressions-vignette-1/</loc>
+    <lastmod>2025-09-16T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-09-16T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -119,6 +125,11 @@
   <url>
     <loc>http://localhost:1313/blog/1757953272049-impressions-imagination-1/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/music/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

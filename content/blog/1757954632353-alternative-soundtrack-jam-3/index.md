@@ -17,8 +17,7 @@ The initial sketches were a bit too up-beat, so I tried to take the material and
 Since I’d made some progress, I decided to stop for the day, and see how the track feels tomorrow.
 
 ### Final sketch from Day 1:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/91LipWydSwg?si=9zLm2eY6HBQbf_Z1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-
+{{< youtubeLite id="91LipWydSwg" label=":D" >}}
 ## Day  2
 ### Seems good to me?
 Listened to the Day 1 sketch again and thought it still sounded ok, even if its a bit more Metal Gear than Mario 😅 and started tweaking some things that felt a bit weird on my first listen + coming up with a new part to add to it.
@@ -37,16 +36,14 @@ After giving it a try on the pulse channel 1, I found it added a lot to the feel
 
 Seemed like I got a good amount stuff done for the day, so stopped there.
 ### Final state of the track on end of Day 2:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r2ZhEnoYN6g?si=Rmf9EOfPImGwwhSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-
+{{< youtubeLite id="r2ZhEnoYN6g" label=":D" >}}
 ## Day 8
 ### Submitting time?
 So I didn’t really work on the track anymore after Day 2, since it felt pretty finished to me already. Only thing I was still thinking about, was the tempo I was going to use, since I was going between 130 or 160 bpm and couldn’t decide. After pondering about it for multiple days, I decided to just have the track at 130 bpm and then in Super Mario style the tempo would get a lot faster after time starts to run out (in this case 180 bpm). I added the faster version to the repeat/fadeout of the track after the little “fill” part, to demonstrate how it would work “in-game”.
 
 Since now it felt pretty finished to me, I decided to just submit it now , since I wasn’t going to do anything more to it.
 ### Final Submitted Track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w-QMtTFQf-w?si=330QYvF0bqe6MNkZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-
+{{< youtubeLite id="w-QMtTFQf-w" label=":D" >}}
 ## Day 3-8 Reaper things
 ### Reaper setup stuff during the jam...
 After Day 2 I got a bit side-tracked in setting up a template in Reaper for the orchestral sounds I have (EW Hollywood Orchestra, old Play version).

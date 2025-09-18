@@ -40,8 +40,9 @@ After you finish the quest and defeat the gargoyle Verag, there appear some comm
 Also the quest is cleared when you defeat Verag, so when you find him, you need to use the attack command on him to attack him, this starts combat, where in the future there will be a turn based system in place, where after you attack him, he attacks back and so forth. Just keep attacking Verag untill you kill him and thats the Quest cleared! and the end of the demo 😄
 
 ## Give the rough version a try?
-
-If you go [here](https://eetusuikkanen.github.io/zorkquest/cargoquest/Endevour.html), you can try out the first, kind of playable demo. 
+{{< button href="https://eetusuikkanen.github.io/zorkquest/cargoquest/Endevour.html" target="_self" >}}
+Play in browser
+{{< /button >}}
 	
 
     

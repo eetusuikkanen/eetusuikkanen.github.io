@@ -82,4 +82,4 @@ I wanted to make the voice stuff sound lo-fi/grungy like the other elements, but
 
 The whole idea for the lyrics came up really as I was going to give up and just submit the track without any voice stuff, so I’m not really happy with the delivery on the vocal parts and the mixing, but I ran out of time to keep doing re takes😅
 ## Final finished/submitted track:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eW5InpEGMOY?si=pFRVMEfM9BdrbPW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="eW5InpEGMOY" label=":D" >}}

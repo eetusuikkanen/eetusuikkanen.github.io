@@ -15,7 +15,7 @@ I pretty quickly got a little melodic figure that I liked and then improvised a 
 Ended up getting a bit side-tracked by the Anniversary update to Half Life 2, so didn’t work on the jam for the rest of the day.
 
 ### Day 1 Sketch:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DvNoFQdb1_A?si=2uFV4TDh5XkM3gEu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="DvNoFQdb1_A" label="hi" >}}
 
 ## Day 2
 Didn’t get any arrangement/instrumentation ideas for yesterdays piano sketch so I decided to start sketching a new track instead.
@@ -35,7 +35,7 @@ Lastly I added a little backing line to the second part of the track using a Pip
 At this stage I felt the track had a pretty good amount of things going on, so the next step would probably be to think if the track is too short or not with its 1 minute runtime (I will probably keep it short, just to make rating easier/faster for people).
 
 ### Day 2 Sketch:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ODIZfhF1mPg?si=DNE7fx8cZP5N02ze" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="ODIZfhF1mPg" label="hi" >}}
 
 ## Day 3
 Started a new track today as well since I felt that the day 2 track was in a pretty good state, and I didn’t get any more ideas to it.
@@ -49,7 +49,7 @@ Since the idea itself was pretty folky, I decided to go with a pretty minimalist
 The arrangement I ended up with consisted of just the guitar, some shaker, tambourine and whistling doubling the melody. After I finished working on the track for now and went to upload the current state to YouTube, as I was thinking of a name for the track, I came up with the name “The Roads Not Taken” and while googling the word I came across a poem called The Road Not Taken by Robert Frost, which gave me the idea of using a poem as lyrics for the track, making the track feel like something people sang while traveling the roads. The whole idea is sort of what I initially tried to do for the previous Ambience Jam, so might be fun to try it this time.
 
 ### Day 3 Sketch:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HEgzq39K_qI?si=5fGhkehOOSU3Lasj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="HEgzq39K_qI" label="hi" >}}
 
 ## Day 4
 Didn’t work on the jam today, mostly just played around on the piano.
@@ -63,7 +63,7 @@ Back to actually working on the jam after a slight side quest with HL2 😅.
 Played around on the piano a bit and came up with an idea for some sort of a combat track, that I will try to arrange tomorrow.
 
 ### Day 6  Sketch
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2DXrQPZLhiA?si=a92hw9Bv0YOYekmx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="2DXrQPZLhiA" label="hi" >}}
 
 ## Day 7
 Before starting to work on the jam today I had listened to some old jrpg soundtracks, and that made me really want to use some retro/snessy sounds.
@@ -73,14 +73,14 @@ I know all my tracks since now have been done with modern sounds, but I just rea
 After making an arrangement of the piano sketch using SNES sounds, I really liked the feel of the sounds. I’m thinking about just switching all the previous tracks to SNES sounds too (I don’t have SNES samples of some of the instruments I’ve used, like the Pipa, but I guess I could make the sounds myself by resampling it?)
 
 ## Day 7 SNES arrangement of Day 6 Sketch:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/20pZ65GQM3w?si=YboA4lUrr2ZoY08p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="20pZ65GQM3w" label="hi" >}}
 
 ## Day 8
 Was feeling pretty unmotivated/lost on any new ideas today, but while i was playing World Of Warcraft before heading off to bed, I suddenly got the urge to try and do some ambient orchestral stuff like they have in wow.
 
 Got the basic idea pretty quick after i started, and managed to make this before ending for the day.
 ### Day 8 Sketch:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t2gUesRc_Bc?si=FCNU9MUSY34QKPi5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="t2gUesRc_Bc" label="hi" >}}
 
 ## Day 9
 No work on the jam today.
@@ -98,4 +98,4 @@ I was bit second guessing if I want to submit these at all since they are pretty
 Hopefully on the next Impressions Jam I’ll be more productive 😅🤞
 
 ## Final Submission
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6fDepqBGCYA?si=9TPQPMQ1crOAHDCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+{{< youtubeLite id="6fDepqBGCYA" label="hi" >}}

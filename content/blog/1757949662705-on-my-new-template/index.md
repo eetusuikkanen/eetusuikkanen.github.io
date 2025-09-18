@@ -32,8 +32,6 @@ But anyway, maybe try to use the articulation per track approach instead of expr
 Here's the short arrangements of **The Trek** and the 2 battle tracks from **FOX QUEST** (**Ancient Evil, Encounter**) that I arranged from old jam tracks, using the new template.
 
 ## Template demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/itPLGmLtZW4?si=FiN0yVrM8Q1MHU1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+{{< youtubeLite id="itPLGmLtZW4" label="hi" >}}
 
 
