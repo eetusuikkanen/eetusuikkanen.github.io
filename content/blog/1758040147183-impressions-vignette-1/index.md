@@ -29,4 +29,14 @@ In the latter part and slightly at the end of the first part, I put a lot of the
 
 #### First idea arrangement test
 {{< youtubeLite id="OdbgYhEsuxY" label="First idea arrangement test" >}}
-### Day 2
+### Day 5
+After the first day I tried to continue the initial idea forward, but I just couldn't get my brain working again for that, and I did try to for multiple days...
+  
+So because of that, I decided to do switch over to Dorico to sketch new stuff in notation instead, since this sort of shift usually helps get my brain going again 😁  
+
+I spent a few hours and got some separate ideas sketched out on a string section, hoping I'd have some separate parts to start arranging from.
+I loosely started these ideas from a little back and forth semitone movement thing I used on the previous track, keeping that as a sort of not so great motive to help have some feeling of cohesion in them 😁.  
+
+Some parts feel OK to me as of writing this, but some are just pretty rough starts of ideas, like the stuff at the end, which I hopefully will get some ideas for tomorrow.
+#### New idea sketches
+{{< youtubeLite id="n82BtvMvigk" label="hi" >}}
