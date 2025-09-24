@@ -40,3 +40,19 @@ I loosely started these ideas from a little back and forth semitone movement thi
 Some parts feel OK to me as of writing this, but some are just pretty rough starts of ideas, like the stuff at the end, which I hopefully will get some ideas for tomorrow.
 #### New idea sketches
 {{< youtubeLite id="n82BtvMvigk" label="hi" >}}
+
+### Day 6
+Really not feeling the theme this time around at all...
+
+The first thing I did feels too quirky to fit the vibe of the painting, the new idea feels a bit meh and does not fit that well with the first one, and I can't seem to get myself in a good flow at all, even with trying to start the new track yesterday.
+
+I did some rough arrangement tests today with throwing lines to different instruments, but working the new track just feels really forced to me...
+
+I think I might end up only submitting the first track that I managed to get at least over 1 minute during the first day, since I'm really not feeling it this jam, but will try to add more to it if I can before the final day (emphasis on the *if I can* 😅)
+
+But, here's the little that I got done today at least 😅
+
+#### New idea arrangement testing
+{{< youtubeLite id="J8v_FuT-qYI" label="hi" >}}
+
+### Day 9
