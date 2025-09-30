@@ -7,16 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Eetu Suikkanen</copyright>
-    <lastBuildDate>Wed, 17 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>music</title>
-      <link>http://localhost:1313/music/1758107231007-music/</link>
-      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+      <title>linuxadventures-season2</title>
+      <link>http://localhost:1313/blog/1759231967808-linuxadventures-season2/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/music/1758107231007-music/</guid>
+      <guid>http://localhost:1313/blog/1759231967808-linuxadventures-season2/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1759231967808-linuxadventures-season2/featured.png" />
     </item>
     
   </channel>
