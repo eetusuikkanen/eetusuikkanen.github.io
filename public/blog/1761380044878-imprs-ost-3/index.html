@@ -143,7 +143,7 @@
     "keywords": ["impressions jam","devlog","jam"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1313"
+    "wordCount": "1799"
   }]
   </script>
 
@@ -641,7 +641,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-10-25T00:00:00&#43;00:00">25 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1313 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span><span class="px-2 text-primary-500">&middot;</span>
+      <time datetime="2025-10-25T00:00:00&#43;00:00">25 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1799 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">9 mins</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 
@@ -909,6 +909,7 @@
         </li>
       </ul>
     </li>
+    <li><a href="#day-6-9">Day 6-9</a></li>
   </ul>
 </nav>
   </div>
@@ -958,6 +959,7 @@
         </li>
       </ul>
     </li>
+    <li><a href="#day-6-9">Day 6-9</a></li>
   </ul>
 </nav>
   </div>
@@ -1121,7 +1123,7 @@
 <p>Overall Bitwig feels pretty great, but still feels a bit slow to use since I don&rsquo;t know all the mouse modifiers and gestures, but I like that it has the same right click menu to switch between the DRAW, MOUSE, SLICE tools just like Cubase had (although sometimes I can&rsquo;t trigger that menu and it only triggers the basic menu instead&hellip;)</p>
 <p>For this new track I just browsed the stock sound/plugins in Bitwig and started noodling ideas and then just recorded what felt OK</p>
 <p>I started out with a drumbeat that I played thing on top of, which kind of led to the whole track having this constant 4 on the floor dance/club track feel</p>
-<p>The track it self feels ok, but fitting to theme? Thats a whole other thing 😅   I&rsquo;m going to probably have to think of an actual made up game which I&rsquo;m writing for, since without that to &ldquo;guide&rdquo; me in a direction I probably will just keep getting stuck/making things that feel <em>off-theme</em>&hellip;.</p>
+<p>The track itself feels ok, but fitting to theme? Thats a whole other thing 😅   I&rsquo;m going to probably have to think of an actual made up game which I&rsquo;m writing for, since without that to &ldquo;guide&rdquo; me in a direction I probably will just keep getting stuck/making things that feel <em>off-theme</em>&hellip;.</p>
 <p>And as I write this addition later at night, I actually found a nice little MIT licensed godot space shooter demo game, and I think I&rsquo;ll use that as the game and try and write a menu/main theme, some stage/level music and maybe a mission complete/victory tune.</p>
 <p>The demo game only has a never ending gameplay loop, but maybe I can try and script a score goal that then goes to a STAGE COMPLETE thing, and from there the player then heads to the next level and so on</p>
 <p>I&rsquo;m not a programmer, but maybe I can somehow set all of that up (or VIBE CODE it 😉), since I really like having a little demo game to hear the music in context like I did for the previous Mystery jam + this time I can actually make the demo playable from the browser!</p>
@@ -1215,6 +1217,66 @@ I really hate that as a default setting and need to look up how to disable it or
     
 </h4>
 <iframe src="https://drive.google.com/file/d/1srFJxKQAoNEPgDt1D6RWBfiqAs_8rUC8/preview" title="Google Drive Audio Player" width="550" height="60" frameborder="0" style="border:none;overflow:hidden;" allow="autoplay"></iframe>
+
+<h2 class="relative group">Day 6-9 
+    <div id="day-6-9" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#day-6-9" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>On these days I did not do much to all the previously started tracks, but actually took a bit of a break in the music side of things and spent a bit of time adding more gameplay elements to the context demo game, since the <a
+  href="https://github.com/godotrecipes/classic_shmup"
+    target="_blank"
+  >Open Source Godot Shmup game by Kids Can Code</a> only had a basic gameplay loop with enemies constantly appearing after all on the screen were defeated.</p>
+<p>What I added to that base was a Boss enemy that appears replacing the normal enemies after the player reaches a score threshold, and all enemies have been cleared from the current wave.<br>
+I also added a health bar for the boss since the boss actually more than 1 hit to kill, unlike the basic enemies 😄</p>
+<p>
+
+
+
+
+
+
+<figure>
+      <img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Hi!"
+    srcset="
+      /blog/1761380044878-imprs-ost-3/bossfight_hu_83e9f4bc256844d9.png  330w,
+      /blog/1761380044878-imprs-ost-3/bossfight_hu_90e93bd62c8a233e.png  660w,
+      /blog/1761380044878-imprs-ost-3/bossfight_hu_fa797bb38cb98217.png 1280w
+    "
+    data-zoom-src="/blog/1761380044878-imprs-ost-3/bossfight.png"
+    src="/blog/1761380044878-imprs-ost-3/bossfight.png">
+
+  
+    <figcaption>What the boss looks like in the game</figcaption>
+</figure>
+</p>
+<p>When the boss is defeated, the gameplay loop starts again with waves of basic enemies spawning constantly and then when the score threshold is met again its a boss fight and so on..</p>
+<p>I made the score threshold value always double itself after every boss, since otherwise the player would have to fight the boss again after every wave which is not really fun 😅</p>
+<p>There is no actual YOU WIN point in the game yet, but hopefully I can get something like that done with its own STAGE CLEAR music to go alongside it before the jam ends.</p>
+<p>The idea to make a boss fight came from new track that I came up with while doing some late night jamming on the keyboard, as I liked the feel of the track with this sort of harmonic planing with sus chords in a sort of phrygian-ish tonality.</p>
+<p>The fight is pretty boring with the boss just shooting 4 bullets in a spread constantly and nothing else, but I&rsquo;m not a programmer and can only read the gdscript syntax a bit from all game jam and other fiddling around in Godot I&rsquo;ve doen before, so that helps me to be able to code some basic <em>slop code</em> with the help of an LLM 😉</p>
+<p>So all in all still need to make a more mellower title track for the phase before starting the game and then a stage clear/you win for the end, but there&rsquo;s still 12 days or so left, so I&rsquo;m not going to be rushing with stuff and just taking it easy, as you can probably tell with me forgetting to write the daily devlog stuff for day 6-9 and just writing these in one go on the 9th day 😂</p>
+<p>Since I&rsquo;ve been posting these devlogs daily on the blog site this time around, instead of only publishing them on the last day of the jam, I&rsquo;ll put the link to the context game here already, even though its still wip in case anyone reading these already want&rsquo;s to give it a shot.</p>
+<a
+  class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+  href="https://eetusuikkanen.github.io/railgunner/"
+  target="_self"
+  
+  role="button">
+  
+Demo Game
+
+</a>
+
 
           
           

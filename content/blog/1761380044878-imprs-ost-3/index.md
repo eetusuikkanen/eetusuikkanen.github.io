@@ -37,7 +37,7 @@ For this new track I just browsed the stock sound/plugins in Bitwig and started 
 
 I started out with a drumbeat that I played thing on top of, which kind of led to the whole track having this constant 4 on the floor dance/club track feel
 
-The track it self feels ok, but fitting to theme? Thats a whole other thing 😅   I'm going to probably have to think of an actual made up game which I'm writing for, since without that to "guide" me in a direction I probably will just keep getting stuck/making things that feel *off-theme*....
+The track itself feels ok, but fitting to theme? Thats a whole other thing 😅   I'm going to probably have to think of an actual made up game which I'm writing for, since without that to "guide" me in a direction I probably will just keep getting stuck/making things that feel *off-theme*....
 
 And as I write this addition later at night, I actually found a nice little MIT licensed godot space shooter demo game, and I think I'll use that as the game and try and write a menu/main theme, some stage/level music and maybe a mission complete/victory tune.
 
@@ -91,4 +91,33 @@ Anyway heres the new stage/level tune
 
 #### New stage music?
 <iframe src="https://drive.google.com/file/d/1srFJxKQAoNEPgDt1D6RWBfiqAs_8rUC8/preview" title="Google Drive Audio Player" width="550" height="60" frameborder="0" style="border:none;overflow:hidden;" allow="autoplay"></iframe>
+
+## Day 6-9 
+
+On these days I did not do much to all the previously started tracks, but actually took a bit of a break in the music side of things and spent a bit of time adding more gameplay elements to the context demo game, since the [Open Source Godot Shmup game by Kids Can Code](https://github.com/godotrecipes/classic_shmup) only had a basic gameplay loop with enemies constantly appearing after all on the screen were defeated.
+
+What I added to that base was a Boss enemy that appears replacing the normal enemies after the player reaches a score threshold, and all enemies have been cleared from the current wave.  
+I also added a health bar for the boss since the boss actually more than 1 hit to kill, unlike the basic enemies 😄  
+
+![Hi!](bossfight.png "What the boss looks like in the game")
+
+When the boss is defeated, the gameplay loop starts again with waves of basic enemies spawning constantly and then when the score threshold is met again its a boss fight and so on..
+
+I made the score threshold value always double itself after every boss, since otherwise the player would have to fight the boss again after every wave which is not really fun 😅
+
+There is no actual YOU WIN point in the game yet, but hopefully I can get something like that done with its own STAGE CLEAR music to go alongside it before the jam ends.
+
+The idea to make a boss fight came from new track that I came up with while doing some late night jamming on the keyboard, as I liked the feel of the track with this sort of harmonic planing with sus chords in a sort of phrygian-ish tonality.
+
+The fight is pretty boring with the boss just shooting 4 bullets in a spread constantly and nothing else, but I'm not a programmer and can only read the gdscript syntax a bit from all game jam and other fiddling around in Godot I've doen before, so that helps me to be able to code some basic *slop code* with the help of an LLM 😉
+
+So all in all still need to make a more mellower title track for the phase before starting the game and then a stage clear/you win for the end, but there's still 12 days or so left, so I'm not going to be rushing with stuff and just taking it easy, as you can probably tell with me forgetting to write the daily devlog stuff for day 6-9 and just writing these in one go on the 9th day 😂
+
+Since I've been posting these devlogs daily on the blog site this time around, instead of only publishing them on the last day of the jam, I'll put the link to the context game here already, even though its still wip in case anyone reading these already want's to give it a shot.  
+
+{{< button href="https://eetusuikkanen.github.io/railgunner/" target="_self" >}}
+Demo Game
+{{< /button >}}
+
+
 
