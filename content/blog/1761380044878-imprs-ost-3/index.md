@@ -164,11 +164,38 @@ I probably will need to add some comments on the code to make it more clear what
 But either way, that's all for now.
 
 
-### Try the demo game?
-   
+## The price of procrastination??
+
+Ended up procrastinating for the rest of the jam and didn't work on the submission at all during that time, only coming back to work on it on the last 3 days.
+
+Unfortunately, I had totally forgotten about the fact that I was using the trial version of Bitwig for this jam and the 30 day trial had run out during my procrastination break, meaning I couldn't do anything the tracks anymore 😂
+
+Luckily I had decided before hand to do the final mixing on the tracks in Reaper, so I had printed out the individual stems the last time I worked on the tracks, so not all was fucked yet 😅
+
+So even if I could've changed the arrangement on the tracks a lot more, I had to just go with what I had done before and get them mixed and mastered, ready to submit.
+
+For the mixing and mastering I wanted the tracks to sound a bit retro in a way, but not bitcrushed or anything like that, so I used tape saturation to get a bit of crunchyness and color to get them sounding a bit "older"
+
+As of writing this, I think I overdid the saturation, and some parts ended a bit too crunched, but I already exported those out and uploaded the video and demo game for them, so I cant be arsed to do all that again 😅
+
+## Submitting
+
+At this point the only thing left is creating and submitting the itch project file, writing the submission page text and all that fun stuff.
+
+The demo game is also uploaded and playable, and I added a pause menu with volume controls for the music and sfx that you can access with the ESC key after starting the gameplay.
+
+And that's all from me this time 👋
+
+You can try the final demo game via the button below.
+
 {{< button href="https://eetusuikkanen.github.io/railgunner/" target="_self" >}}
 Demo Game
 {{< /button >}}
+
+## Final Submission
+
+{{< youtubeLite id="foCHXI88SM8" label="RailGunner OST" >}}
+
 
 
 

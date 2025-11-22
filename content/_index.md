@@ -3,4 +3,4 @@ title: "Music"
 ---
 **Latest Work**
 
-{{< youtubeLite id="5DlUXe0uX4Q" label="Latest Music" >}}
+{{< youtubeLite id="foCHXI88SM8" label="Latest Music" >}}
