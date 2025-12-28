@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daw on Eetu Suikkanen - Music Composer</title>
-    <link>http://localhost:1313/tags/daw/</link>
+    <link>https://eetusuikkanen.github.io/tags/daw/</link>
     <description>Recent content in Daw on Eetu Suikkanen - Music Composer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Eetu Suikkanen</copyright>
-    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/daw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eetusuikkanen.github.io/tags/daw/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>On My New Cubase Template</title>
-      <link>http://localhost:1313/blog/1757949662705-on-my-new-template/</link>
+      <link>https://eetusuikkanen.github.io/blog/1757949662705-on-my-new-template/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/1757949662705-on-my-new-template/</guid>
+      <guid>https://eetusuikkanen.github.io/blog/1757949662705-on-my-new-template/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/1757949662705-on-my-new-template/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://eetusuikkanen.github.io/blog/1757949662705-on-my-new-template/featured.png" />
     </item>
     
   </channel>
