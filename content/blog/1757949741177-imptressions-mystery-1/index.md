@@ -56,7 +56,7 @@ For this next section I wanted to use Motif 1, so I can then start playing aroun
 
 This time i tweaked the motif slightly, but might actually change this later to just match the motif 1:1, but right now felt that it would feel too boring if this part also just started with the 1:1 of the motif + I wanted it to fit the 6/8 time of the first section.
 
-![Section 2](/imprs-myst-1-forest-sect-1.webp)
+![Section 2](/imprs-myst-1-forest-sect-2.webp)
 
 For the second section i went with a lighter feel, with just the strings playing the melody first in the cello’s and then passing to the violins that get harmonized later by the second violins, and the celli and basses playing a rhythmic bass pattern to add some more rhythm (maybe a bit too annoying with the staccatos, might just change them to sustains later..) and a repeating chordal waltz rhythm on the harp and celeste to have a constant beat.
 

@@ -1,10 +1,10 @@
 colorScheme = "blowfish"
-defaultAppearance = "light"
-autoSwitchAppearance = true
-enableA11y = false
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+enableA11y = true
 enableSearch = true
 enableCodeCopy = "enable"
-replyByEmail = false
+replyByEmail = true
 disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
@@ -23,6 +23,13 @@ defaultBackgroundImage = "DAYDREAM BG.png"
 highlightCurrentMenuArea = true
 smartTOC = "Enable"
 defaultFeaturedImage = "DAYDREAM BG.png"
+enableStructuredBreadcrumbs = ""
+enableStyledScrollbar = true
+smartTOCHideUnfocusedChildren = "disable"
+defaultSocialImage = "LOGO DISC 400x400.png"
+robots = ""
+hotlinkFeatureImage = ""
+disableImageZoom = ""
 
 [header]
 layout = "fixed-fill-blur"
@@ -74,22 +81,23 @@ showZenMode = "show"
 heroStyle = "background"
 showRelatedContent = "show"
 relatedContentLimit = "6"
+editURL = ""
 
 [list]
-showHero = "hide"
+showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = false
-showBreadcrumbs = "show"
+showBreadcrumbs = "hide"
 showSummary = "show"
 showViews = false
 showLikes = false
 showTableOfContents = "hide"
 showCards = "enable"
 orderByWeight = false
-groupByYear = true
-cardView = "disable"
-cardViewScreenWidth = "disable"
-constrainItemsWidth = "disable"
+groupByYear = "disable"
+cardView = "enable"
+cardViewScreenWidth = "false"
+constrainItemsWidth = "enable"
 heroStyle = "background"
 
 [sitemap]
@@ -102,7 +110,7 @@ showBreadcrumbs = "show"
 showViews = false
 showLikes = false
 showTableOfContents = "show"
-cardView = "enable"
+cardView = false
 heroStyle = "background"
 
 [term]
@@ -112,5 +120,6 @@ showViews = false
 showLikes = false
 showTableOfContents = true
 groupByYear = false
-cardView = false
-cardViewScreenWidth = ""
+cardView = true
+cardViewScreenWidth = true
+heroStyle = "background"
