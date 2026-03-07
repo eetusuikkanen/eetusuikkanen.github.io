@@ -9,7 +9,17 @@
     <managingEditor>eetu.suikkanen.music@gmail.com (Eetu Suikkanen)</managingEditor>
     <webMaster>eetu.suikkanen.music@gmail.com (Eetu Suikkanen)</webMaster>
     <copyright>© 2026 Eetu Suikkanen</copyright>
-    <lastBuildDate>Sat, 25 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/jam/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 10:57:48 +0200</lastBuildDate><atom:link href="http://localhost:1313/tags/jam/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Impressions Composing Jam: Imagination #4 </title>
+      <link>http://localhost:1313/blog/impressions-imagination-4/</link>
+      <pubDate>Sat, 28 Feb 2026 10:57:48 +0200</pubDate>
+      <author>eetu.suikkanen.music@gmail.com (Eetu Suikkanen)</author>
+      <guid>http://localhost:1313/blog/impressions-imagination-4/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/impressions-imagination-4/featured.png" />
+    </item>
     
     <item>
       <title>Impressions Composing Jam: OST #3</title>
