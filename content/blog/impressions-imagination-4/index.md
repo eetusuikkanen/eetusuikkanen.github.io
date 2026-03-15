@@ -1,12 +1,14 @@
 +++
 date = "2026-02-28T10:57:48+02:00"
-draft = true
+draft = false
 title = "Impressions Composing Jam: Imagination #4 "
 categories = [ "Jam Journals" ]
 tags = [ "impressions jam", "devlog", "jam" ]
 description = "Jam devlog for the Impressions Composing Jam: Imagination #4"
 slug = "impressions-composing-jam-imagination-4"
+
 +++
+
 # First jam of 2026!
 ## Foreword
 
@@ -48,7 +50,7 @@ After an hour or so, I had managed to form up some sort of a mess of sounds and 
 
 <iframe src="https://drive.google.com/file/d/1HJljOK5Qc7A6ZvP0QOV7yVd4-2wv3VBl/preview" title="Google Drive Audio Player" width="550" height="60" frameborder="0" style="border:none;overflow:hidden;" allow="autoplay"></iframe>
 
-## Not that good great after all?
+## Not that great after all?
 
 On the day after, I listened back to the sketch and felt it felt pretty meh to me after the break.
 So because of that I decided to try the idea out with just a  orchestra palette to see if it feels any better, which will take some time to get a arrangement done, but the jam lasts 2 weeks so there is time to experiment different ideas out like I usually like to do.
@@ -116,5 +118,63 @@ Anyway, hope you enjoyed the unasked for mid jam vent/rant, made for thrilling r
 Few days after the previous text, I'm writing this now a linux system after backing up my windows files and then formatting the whole drive, after which I also formatted my existing EndevourOS (Linux) drive and decided to start from a completely fresh install.
 
 Since I've done the *pro-audio* setup/tweaks to new linux installations a few times now, getting things up and running was pretty quick.  
-The one thing that took me a bit was getting EastWest's installation center and Play working properly without crashes and other issues, since they need some additional stuff that you need to install to your wine setup using the *winetricks* tool
+The one thing that took me a bit was getting EastWest's installation center and Play working properly without crashes and other issues, since they need some additional stuff that you need to install to your WINE prefix using the *winetricks* tool, and I never made any documentation for myself the previous times on what was needed (and forgot to do that this time too..😅).
 
+One new thing I needed to get Play working in Reaper this time, was that I needed to point WINE to some locale data when booting Reaper, since otherwise WINE would just crash when I tried loading any sound in the plugin. Starting Reaper/Your daw from the terminal helps to debug these issues, since all the error logs can be seen from there, and that's how I could solve this one 😉
+
+{{< lead >}}
+Bash script I use to launch Reaper, where the needed values are passed to WINE
+{{< /lead >}}
+```
+#!/bin/bash
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export PYTHONIOENCODING=utf-8
+/usr/bin/reaper
+```
+
+But when all of the vst wine/yabridge setup was done and ILOK was working, I tested out Kontakt and Play in Reaper, and they worked nicely, with Kontakt actually performing a bit better than previously when I was still using the old WINE 9.21 version. Seems like the newer WINE versions have improved some things that help with performance for Kontakt, or at least felt like that to me.
+
+Of course there is a slight hit to cpu usage from WINE, but I could still load up the midi for my jam track in Reaper, load up all the correct sounds in Play and everything worked perfectly and I had no issues in CPU, RAM or performance at all.
+
+Alongside the midi, I also printed out stems of the project, in case I decide to just submit what I've got done, but now that all my sounds work without issue, I might try to continue working more on the track If I can get in the flow, but for now I'll try to get some other ideas first.
+
+I've been feeling pretty creatively dry for some days now and haven't managed to get anything done regarding the jam, but still going to keep trying with my usual 30 min/1 hour composing sessions, and if nothing comes up till the few last days, then I'll just submit what I managed to get done.
+
+Might also have to start thinking about the cover art, since the jam has no artwork theme this time, or maybe just use the jam's thumbnail image if I'm lazy 😅. I'm not really good at drawing and have never practiced it, but might be the time to try that in case it helps my brain on the music side like writing these journals and the occasional lyrics have done for me.
+
+Anyway, 6 days left of the jam for me at this point in time.
+
+### Play running well via WINE and Yabridge
+{{< youtubeLite id="9YRQwHPLGIw" label="It's Alive!" >}}
+
+## Little tweaking
+
+Only 3 days left now, but haven't really managed to get much more done.  
+Cut the first intro part in half, since it felt a bit too long and boring before the build-up to opening the door and added some metal hits in the background during the build-up, although 50/50 on if maybe they're a bit too low volume.
+
+But still feeling really done with this track, so will probably try to start on making some sort of a cover art tomorrow, and then on the final day, add/make changes if any come up and just mix/master the thing and submit it..
+
+## Submitting Day
+
+Managed to get some sort of cover art done, although pretty minimalistic with the person having got out of the factory in the mountain and is looking at the mountain and colossus in the distance.  
+
+I was lazy and made the outlines of the colossus by tracing over a certain mecha unit from a certain show, bonus points to anyone that can actually regognize what it is and from what show 😄
+
+![Cargo](imag4_artwork_FINAL.png "The final cover art")
+
+Did this in Krita using mostly one of the texture painting brushes that had this kinda blurry feel to it that I liked, and was intending to try and add some sort of mist like thing over the mountain and the landscape, but couldn't get it to not look like shit with my skills, so just abandoned the idea and as a result it's just blurry stuff over a black background 😅
+
+But hey, at least for one I actually made a proper cover art for a jam, instead of just using the theme painting 😉
+
+Couldn't really change or add more to the track itself, so just got the volumes nice and loud enough, made the video and uploaded that youtube.  
+
+I also feel that the volume difference between the final tutti stabs when the person sees the colossus at the end when compared to the rest of the track before might be a bit too big of a sudden jump in dynamics, but I wanted to emphasize the **"suddenly a red electric light illuminates a colossal machine"** part of the theme narration.
+
+I wasn't really vibing with my track this jam, but will try to be more productive on the next ones, with the initial gameplan being on doing less orchestral stuff this year, since last year's goal for me was to practice working with orchestral samples in the daw.   
+
+But anyway, now it's just making the itch.io submission page, submitting it and I'm done, so I'll end my ramblings here. 👋
+
+## Final Submission
+
+{{< youtubeLite id="bwQBFZuEjz8" label="The thing" >}}
