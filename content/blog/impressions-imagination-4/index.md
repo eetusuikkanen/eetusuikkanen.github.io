@@ -5,6 +5,7 @@ title = "Impressions Composing Jam: Imagination #4 "
 categories = [ "Jam Journals" ]
 tags = [ "impressions jam", "devlog", "jam" ]
 description = "Jam devlog for the Impressions Composing Jam: Imagination #4"
+slug = "impressions-composing-jam-imagination-4"
 +++
 # First jam of 2026!
 ## Foreword
@@ -108,4 +109,12 @@ The installer/manager from EastWest did work pretty much without issues for me u
 
 If I'm still stuck like this on the next week, I might just go ahead with wiping my windows drive and switching to work in linux during this jam, but probably will do it after the jam.
 
-Anyway, enjoy the random mid jam vent/rant, makes for thrilling reading im sure 😅
+Anyway, hope you enjoyed the unasked for mid jam vent/rant, made for thrilling reading I'm sure 😅
+
+## Better sooner than later, i guess?
+
+Few days after the previous text, I'm writing this now a linux system after backing up my windows files and then formatting the whole drive, after which I also formatted my existing EndevourOS (Linux) drive and decided to start from a completely fresh install.
+
+Since I've done the *pro-audio* setup/tweaks to new linux installations a few times now, getting things up and running was pretty quick.  
+The one thing that took me a bit was getting EastWest's installation center and Play working properly without crashes and other issues, since they need some additional stuff that you need to install to your wine setup using the *winetricks* tool
+
