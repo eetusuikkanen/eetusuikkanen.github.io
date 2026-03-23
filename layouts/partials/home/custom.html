@@ -1,0 +1,70 @@
+<div class="flex flex-col w-full mt-4">
+  
+  <!-- 1. Minimalist Hero Section -->
+  <section class="mb-16 text-center flex flex-col items-center">
+    
+    <!-- Headshot Profile Picture -->
+    <div class="mb-8 rounded-full overflow-hidden w-32 h-32 border-2 border-neutral-300 dark:border-neutral-700 shadow-sm mx-auto">
+        {{ if site.Params.author.image }}
+          <!-- Pulls the image you set in Hugo's config -->
+          <img src="{{ site.Params.author.image | relURL }}" alt="Author Headshot" class="w-full h-full object-cover">
+        {{ else }}
+          <!-- Fallback just in case the config is missing -->
+          <img src="{{ "img/PÄÄOSUMA.jpg" | relURL }}" alt="Author Headshot" class="w-full h-full object-cover">
+        {{ end }}
+    </div>
+
+    <h1 class="text-4xl lg:text-5xl font-light text-neutral-800 dark:text-neutral-200 mb-6 tracking-wide">
+      Crafting Soundscapes & <br class="hidden lg:block">Exploring Audio Tech
+    </h1>
+    <p class="text-lg text-neutral-500 dark:text-neutral-400 max-w-2xl mb-8 leading-relaxed mx-auto">
+      I am Eetu Suikkanen, a Finnish composer writing music in varying styles. Welcome to my digital garden where I showcase my composing projects alongside my blog regarding Linux and audio production.
+    </p>
+    
+    <!-- Call to Action Buttons -->
+    <div class="flex flex-wrap gap-6 justify-center">
+      <!-- Listen to Projects Button (Thick Outline) -->
+      <a href="/projects/" class="px-8 py-3 border-2 border-primary-800 dark:border-primary-200 text-primary-800 dark:text-primary-200 font-bold rounded hover:bg-primary-800 hover:text-neutral-100 dark:hover:bg-primary-200 dark:hover:text-neutral-900 transition-colors uppercase tracking-wider text-sm">
+        Listen to Projects
+      </a>
+      <!-- Read the Blog Button (Thick Outline) -->
+      <a href="/blog/" class="px-8 py-3 border-2 border-neutral-500 dark:border-neutral-400 text-neutral-600 dark:text-neutral-300 font-bold rounded hover:bg-neutral-600 hover:text-neutral-100 dark:hover:bg-neutral-400 dark:hover:text-neutral-900 transition-colors uppercase tracking-wider text-sm">
+        Read the Blog
+      </a>
+    </div>
+  </section>
+
+  <!-- 2. Split Content Columns -->
+  <!-- 'items-start' keeps the cards proportional -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-start">
+    
+    <!-- Music & Projects Column -->
+    <section>
+      <div class="flex items-center justify-between mb-6 border-b border-neutral-300 dark:border-neutral-700 pb-2">
+        <h2 class="text-2xl font-semibold m-0 uppercase tracking-widest text-neutral-800 dark:text-neutral-200">Latest Projects</h2>
+        <a href="/projects/" class="text-sm font-bold text-primary-600 dark:text-primary-400 hover:underline">View All &rarr;</a>
+      </div>
+      <div class="grid grid-cols-1 gap-6">
+        {{ $projects := where site.RegularPages "Section" "projects" }}
+        {{ range first 2 $projects }}
+          {{ partial "article-link/card.html" . }}
+        {{ end }}
+      </div>
+    </section>
+
+    <!-- Blog & Tech Column -->
+    <section>
+      <div class="flex items-center justify-between mb-6 border-b border-neutral-300 dark:border-neutral-700 pb-2">
+        <h2 class="text-2xl font-semibold m-0 uppercase tracking-widest text-neutral-800 dark:text-neutral-200">Latest Posts</h2>
+        <a href="/blog/" class="text-sm font-bold text-primary-600 dark:text-primary-400 hover:underline">Read All &rarr;</a>
+      </div>
+      <div class="grid grid-cols-1 gap-6">
+        {{ $blog := where site.RegularPages "Section" "blog" }}
+        {{ range first 2 $blog }}
+          {{ partial "article-link/card.html" . }}
+        {{ end }}
+      </div>
+    </section>
+
+  </div>
+</div>

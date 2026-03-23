@@ -164,6 +164,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/reaper/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/music/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

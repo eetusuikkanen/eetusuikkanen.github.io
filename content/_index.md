@@ -2,10 +2,10 @@
 title: "Music"
 ---
 
-{{< button href="mailto:eetu.suikkanen.music@gmail.com" target="_self" >}}
-Email me
-{{< /button >}}  
-#
+<!-- {{< button href="mailto:eetu.suikkanen.music@gmail.com" target="_self" >}}
+Contact
+{{< /button >}}   -->
+
 <iframe
  width="100%"
  height="600"

@@ -30,6 +30,7 @@ defaultSocialImage = "LOGO DISC 400x400.png"
 robots = ""
 hotlinkFeatureImage = ""
 disableImageZoom = ""
+imagePosition = ""
 
 [header]
 layout = "fixed-fill-blur"

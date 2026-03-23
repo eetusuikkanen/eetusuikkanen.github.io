@@ -1,0 +1,37 @@
+:root {
+  /* NEUTRAL: Pure Grayscale for backgrounds and paragraph text */
+  --color-neutral-50: 250, 250, 250;
+  --color-neutral-100: 240, 240, 240;
+  --color-neutral-200: 220, 220, 220;
+  --color-neutral-300: 200, 200, 200;
+  --color-neutral-400: 160, 160, 160;
+  --color-neutral-500: 120, 120, 120;
+  --color-neutral-600: 80, 80, 80;
+  --color-neutral-700: 50, 50, 50;
+  --color-neutral-800: 30, 30, 30;
+  --color-neutral-900: 15, 15, 15;
+
+  /* PRIMARY: High-contrast scale for Titles, Links, and Navigations */
+  --color-primary-50: 255, 255, 255;
+  --color-primary-100: 250, 250, 250;
+  --color-primary-200: 230, 230, 230;
+  --color-primary-300: 210, 210, 210;
+  --color-primary-400: 190, 190, 190; /* Bright light-gray for Dark Mode text */
+  --color-primary-500: 130, 130, 130;
+  --color-primary-600: 70, 70, 70;
+  --color-primary-700: 40, 40, 40;
+  --color-primary-800: 15, 15, 15;    /* Stark almost-black for Light Mode text */
+  --color-primary-900: 0, 0, 0;
+
+  /* SECONDARY: Soft accents */
+  --color-secondary-50: 255, 255, 255;
+  --color-secondary-100: 250, 250, 250;
+  --color-secondary-200: 240, 240, 240;
+  --color-secondary-300: 220, 220, 220;
+  --color-secondary-400: 180, 180, 180;
+  --color-secondary-500: 128, 128, 128;
+  --color-secondary-600: 80, 80, 80;
+  --color-secondary-700: 50, 50, 50;
+  --color-secondary-800: 30, 30, 30;
+  --color-secondary-900: 10, 10, 10;
+}
