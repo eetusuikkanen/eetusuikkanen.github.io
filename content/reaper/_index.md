@@ -11,10 +11,15 @@ I also found out about the Multi Tool script from there.   Seems like he has som
 
 https://seventhsam.com/blogs/tutorials/posts/6791049/how-to-set-up-reaper-s-midi
 
-## Gridbox
-Binding the action to change the grid sizes is also handy, I did that in cubase too (1/4, 1/8, etc), but there is a user made script/tool by FeedTheCat to dynamically change the grid size based on zoom level thats great too.
+## Adaptive Grid/Gridbox
+Binding the action to change the grid sizes is also handy, I did that in cubase too (1/4, 1/8, etc), but there is a user made script/tool by FeedTheCat to dynamically change the grid size based on zoom level + show what the current grid size is, thats great too.
 
 https://forum.cockos.com/showthread.php?t=260388
+
+## MX Tuner
+Another usefull script from FeedTheCat that creates a little 1 octave keyboard that shows what the pitch of the currently selected audio in the media explorer is, and also lets you click on the keys to change the pitch of the file fast which is great! Its also dockable to the media explorer, so just dock it there and add a button to the **Media Explorer Toolbar** to show/hide it and you have a great tool for when you need it.
+
+https://forum.cockos.com/showthread.php?t=259698
 
 ## Articulation Scripts
 Probably the one thing that helped me the most on switching to reaper, specifically in regards to working with orchestral/sampled sounds, was the new Articulation System by Jesper Ankarfeldt, in Cubase I had set up expression maps with negative track delays per articulation for all my sounds in , since that was finally  a function in the newer updates before switching to REAPER, and this script also makes it possible to have per articulation delay values as too!
@@ -50,7 +55,7 @@ The script that toggles it on and off is called **FX: Toggle preference: Auto-by
 I attached that script to a button and now I can toggle it on/off when I want to record in the lowest latency possible.
 
 ## Enlarge Selected Track(s)
-For having the Enlarge Selected Tracks via a hotkey feature from Cubase, there are two actions from the [SWS extension addon to Reaper](https://sws-extension.org/) that can be used to recreate it, called X**enakios/SWS: Set selected tracks heights to A** and **Xenakios/SWS: Set selected tracks heights to B** respectively. You set the height values for the A  and B inside the **Extensions>SWS/S&M>Command Parameters** menu, I used 450 for B to get it to a nice size for editing audio and then 0 for A to set it to the smallest height since that's what I keep tracks on by default.
+For having the Enlarge Selected Tracks via a hotkey feature from Cubase, there are two actions from the [SWS extension addon to Reaper](https://sws-extension.org/) that can be used to recreate it, called **Xenakios/SWS: Set selected tracks heights to A** and **Xenakios/SWS: Set selected tracks heights to B** respectively. You set the height values for the A  and B inside the **Extensions>SWS/S&M>Command Parameters** menu, I used 450 for B to get it to a nice size for editing audio and then 0 for A to set it to the smallest height since that's what I keep tracks on by default.
 
 ![The place 1](swsextcompar.png "Input your desired height values here inside the Command Parameters menu")
 
