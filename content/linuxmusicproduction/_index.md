@@ -1,4 +1,12 @@
-# Notes on how to get Windows plugins without native Linux versions to work on Linux using the WINE Compability layer
+# Notes on getting Windows audio software running on Linux
+
+{{< lead >}}
+These are what has worked for me, to get the software I own working on Linux, currently using WINE 11.6 and Yabridge's new-wine10-embedding branch.
+{{< /lead >}}
+
+{{< alert icon="triangle-exclamation" >}}
+The solutions/methods written here have worked at their time of writing, but any update to the Windows software can break it again leading to new steps to be taken to get it running again (if possible)
+{{< /alert >}}
 
 ## Preface
 The best thing would be to just use native Linux software and plugins to write your music and any audio production you might do, but I, and probably many others who are switching to Linux, own a lot of software, plugins and sample libraries that we have spent a lot of money on (especially sample libraries... 😭) and would like to still keep using them, if possible.
@@ -14,9 +22,18 @@ In Windows I've tried to use mostly stock DAW plugins from my Cubase DAW for eff
 
 I have been keeping some notes on setting up REAPER to be a bit more comfortable to use for me which you can find [here](/reaper).
 
-I'm not going to write on how to optimize your system for the lowest latency or anything of the sort, since that might vary depending on your distribution and in some cases the distribution comes pre-configured for audio production, like distros such as Ubuntu Studio do.  
+I'm not going to write on how to optimize your system for the lowest latency or anything of the sort, since that might vary depending on your distribution and in some cases the distribution comes pre-configured for audio production, like distros such as Ubuntu Studio do. 
 
-If you want to find out more on that topic, try searching for a setup guide for your distribution on the [Linux Musicians Forum](https://linuxmusicians.com/viewforum.php?f=4) or just search for "*your distro name* pro audio realtime setup"
+Tools I know of that help with some common pro-audio optimizations are:
+
+* [RTCQS](https://codeberg.org/rtcqs/rtcqs) which is a little python utility that checks your system for some common optimizations if they are enabled, and if not then tells you how to enable them 
+* [Millisecond](https://flathub.org/en/apps/io.github.gaheldev.Millisecond) if you have flatpak support installed on your system, this does pretty much the same thing as **RTCQS** does.
+
+{{< alert icon="lightbulb" >}}
+Some optimizations could have negative effects on other system usage like gaming, so do keep that in mind and read up on any potential side effects of recommended real-time optimizations and check if it might affect your use cases negatively!
+{{< /alert >}}
+
+If you want to find out more on optimizing linux for pro-audio, try searching for a pro-audio tweak/optimization guide for your distribution on the [Linux Musicians Forum](https://linuxmusicians.com/viewforum.php?f=4) or just search for "*your distro name* pro audio realtime setup" on your search engine of choice.
 
 ## Finding plugins and help to get started.
 
@@ -62,17 +79,21 @@ If you encounter any issues with logging in to ILOK, you can try running the app
 The location of the EXE file will probably be something like **/home/YOURUSERNAMEHERE/.wine/drive_c/Program Files (x86)/iLok License Manager/iLok License Manager.exe**  
 In Linux *.wine* and other such folders beginning with a dot are hidden by default, so you need to enable SHOW HIDDEN FOLDER/FILES in your file browser to see them.
 
-The one thing to keep in mind with ILOK is that everytime you update WINE, deactivate all licenses from your machine beforehand, just in case the machine ID changes after the upgrade and you have to request a license removal from the old machine ID that will take time to happen.
+{{< alert icon="triangle-exclamation" >}}
+It's best to deactive all licenses on your machine in ILOK before a WINE update, since the machine ID can change leading to the licences stuck on the old ID.
+{{< /alert >}}
+
 
 ## Native Access/Kontakt
 
-The Native Access software is a pain to set up and every update can break it after you got it working + the library installation is a bit broken leading you to need to manually moun the iso files after very download to install them yourself. which is really tedious..
+The Native Access software can break with any updates to it and I'm trying to switch to non-kontakt alternatives, but here is what I've done to get it working as of writing this (7.4.2026).
 
-If possible backup your sample libraries to a external drive and then add them to the NATIVE ACCESS after copying them to your system drives, since its much faster that way.
+- Installed dotnet48 package for the wineprefix using winetricks with the `winetricks -q dotnet48` command in the terminal
+- Installed powershell for the wine prefix with the `winetricks --unattended powershell` command in the terminal
+- installing the vcrun6sp6 using the `winetricks vcrun6sp6` command to fix the ISSKINU.DLL error, as mentioned [below](#failed-to-import-isskinudll)
 
-I've sadly just decided to try to avoid kontakt on Linux because of that..
+Ffter installing those dependencies the Native Access 2 app will work, but most of the software/libraries you download through native access come in ISO files, and the app cant mount them properly, so you need to manually extract the files from the iso or mount it to install the software/library. For me on Native Access 2 it also deletes the iso after it fails to mount it, so you need to rename the file before it gets deleted which is a pain... Luckily I've kept my sample libraries backed up on external shares so i can just point Native Access to the files to get them working 😉
 
-Hopefully developers will start adopting the KODA sampler after it comes out, since then that could be a good replacement for Kontakt if it gets the linux native version at some point like they seem to be intending.
 
 ## Arturia Plugins
 The **Arturia Software Center** installs and works great for me!
@@ -80,7 +101,7 @@ The **Arturia Software Center** installs and works great for me!
 I own the older **V Collection 6** bundle and all the instruments have worked great for me in REAPER, so probably will work fine for anyone else too.
 
 ## Eastwest Installation Center and PLAY
-**Eastwest Play** will require some fonts to work properly, and I don't know which fonts specifically, so I reommend just running the *winetricks allfonts* command in the terminal that will install all the fonts winetricks has available to your wine prefix and that did the trick for me!  
+**Eastwest Play** will require some fonts to work properly, and I don't know which fonts specifically, so I reommend just running the `winetricks allfonts` command in the terminal that will install all the fonts winetricks has available to your wine prefix and that did the trick for me!  
 
 The **Installation Center** should install without an issue, allthough the GUI of it will look a bit wonky 😅
 ![](/INSTCENTER.png)
@@ -90,12 +111,12 @@ From there you should be able to install your plugins and sample libraries, but 
 ## Failed to import ISSKINU.DLL
 This error might come up while installing some plugins or software, which seems to mean that you are missing some windows runtimes that the software/installer requires.
 
-I solved this by installing the *vcrun6sp6* runtime package using winetricks, which you can do by running the *winetricks vcrun6sp6* command in the terminal, or opening the Winetricks app going **Select the default wineprefix>Install a Windows DLL or component>vcrun6sps6** and after selecting the package pressing OK to install it.
+I solved this by installing the *vcrun6sp6* runtime package using `winetricks`, which you can do by running the `winetricks vcrun6sp6` command in the terminal, or opening the Winetricks app going **Select the default wineprefix>Install a Windows DLL or component>vcrun6sps6** and after selecting the package pressing OK to install it.
 
 ## SINE Player
 Sine player will also install and work OK without issue, but the MY LICENSES tab where you can install your libraries from will not work.
 
-That is because those parts of the plugin are actually web pages and require the **msedgewebview** which you have to go download from [Microsoft's website](https://developer.microsoft.com/en-us/microsoft-edge/webview2/?form=MA13LH#download) and from there choose the **Evergreen Standalone Installer** package to download and install, after installing that you have to open the **winecfg** tool, and from the **applications** tab there, choose **add application** browse to **Program Files (x86)>Microsoft>EdgeWebView>Application>140.0.3856.78 (or your current version number)>msedgewebview2.exe and after selecting the exe file, press open to add it.
+That is because those parts of the plugin are actually web pages and require the **msedgewebview** which you have to go download from [Microsoft's website](https://developer.microsoft.com/en-us/microsoft-edge/webview2/?form=MA13LH#download) and from there choose the **Evergreen Standalone Installer** package to download and install, after installing that you have to open the **winecfg** tool, and from the **applications** tab there, choose **add application** browse to **Program Files (x86)>Microsoft>EdgeWebView>Application>140.0.3856.78 (or your current version number)>msedgewebview2.exe** and after selecting the exe file, press open to add it.
 
 After its added under the applications tab, choose it and change the **Windows Version** to **Windows 7** like show in the image below![](/sinesetup.png) 
 
