@@ -4,5 +4,4 @@ cascade:
   showDate: false
   groupByYear: false
   showWordCount: false
-  
 ---

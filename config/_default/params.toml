@@ -97,7 +97,7 @@ showCards = "enable"
 orderByWeight = false
 groupByYear = "disable"
 cardView = "enable"
-cardViewScreenWidth = "false"
+cardViewScreenWidth = false
 constrainItemsWidth = "enable"
 heroStyle = "background"
 

@@ -252,6 +252,16 @@
     </item>
     
     <item>
+      <title></title>
+      <link>http://localhost:1313/thankyou/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>eetu.suikkanen.music@gmail.com (Eetu Suikkanen)</author>
+      <guid>http://localhost:1313/thankyou/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Ascension Of The Impermanent Soul</title>
       <link>http://localhost:1313/projects/kuplapelilol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -259,16 +269,6 @@
       <guid>http://localhost:1313/projects/kuplapelilol/</guid>
       <description>Project for the Finnish Game Jam 2025</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/kuplapelilol/featured.png" />
-    </item>
-    
-    <item>
-      <title>Fox Quest 2</title>
-      <link>http://localhost:1313/projects/foxquest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>eetu.suikkanen.music@gmail.com (Eetu Suikkanen)</author>
-      <guid>http://localhost:1313/projects/foxquest/</guid>
-      <description>Continuation project of a jam demo game</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/foxquest/featured.png" />
     </item>
     
     <item>

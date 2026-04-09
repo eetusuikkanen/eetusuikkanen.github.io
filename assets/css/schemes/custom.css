@@ -1,0 +1,13 @@
+/* This targets the container that Blowfish uses for card grids */
+.grid.grid-cols-1, 
+.grid.ms-grid {
+    justify-content: center !important;
+}
+
+/* This ensures the individual cards are centered if the row isn't full */
+section .grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1.5rem; /* Adjust this to match your theme's spacing */
+}

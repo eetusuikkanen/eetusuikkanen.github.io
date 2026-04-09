@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Fox Quest 2"
 summary: "Continuation project of a jam demo game"
 externalUrl: "https://eetusuikkanen.github.io/foxquest2"
