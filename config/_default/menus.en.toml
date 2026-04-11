@@ -15,15 +15,31 @@ weight = 1
 
 [[main]]
 name = "REAPER"
-pageRef = "reaper"
-identifier = "riviiHjWIQ"
 weight = 3
 
 [[main]]
+name = "Useful Settings And Scripts"
+parent = "REAPER"
+pageRef = "reaper"
+weight = 3
+
+
+[[main]]
 name = "Making Music On Linux"
-pageRef = "linuxmusicproduction"
-identifier = "BGi8Ke1RRQ"
 weight = 4
+
+[[main]]
+name = "Running Windows Plugins"
+parent = "Making Music On Linux"
+pageRef = "linuxmusicproduction/windowsplugins"
+weight = 4
+
+[[main]]
+name = "Linux Plugins"
+parent = "Making Music On Linux"
+pageRef = "linuxmusicproduction/linuxplugs"
+weight = 4
+
 
 [[footer]]
 none = "none"
