@@ -4,18 +4,24 @@
 
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-02-28T10:57:48+02:00</lastmod>
+    <lastmod>2026-04-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/blog/impressions-composing-jam-imagination-4/</loc>
-    <lastmod>2026-02-28T10:57:48+02:00</lastmod>
+    <loc>http://localhost:1313/blog/impressions-melody-1/</loc>
+    <lastmod>2026-04-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/impressions-composing-jam-imagination-4/</loc>
     <lastmod>2026-02-28T10:57:48+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
